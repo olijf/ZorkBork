@@ -10,6 +10,7 @@ namespace ZorkBork
     {
         static void Main(string[] args)
         {
+            throw new NotImplementedException();
         }
     }
 }
