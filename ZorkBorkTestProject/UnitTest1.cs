@@ -1,15 +1,16 @@
 ﻿using System;
+using ZorkBork;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace ZorkBorkTestProject
 {
     [TestClass]
-    public class UnitTest1
+    public class KaartItemsTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ItemTest()
         {
-            throw new NotImplementedException();
+            KaartItemBaseClass.Beschrijving
         }
     }
 }

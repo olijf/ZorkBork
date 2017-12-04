@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZorkBork", "ZorkBork\ZorkBork.csproj", "{2271E33C-3FBE-4D4C-977E-C9AEDEC8F853}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZorkBorkTestProject", "ZorkBorkTestProject\ZorkBorkTestProject.csproj", "{98B0280C-F204-436A-A1A7-AA41421FCF63}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2271E33C-3FBE-4D4C-977E-C9AEDEC8F853} = {2271E33C-3FBE-4D4C-977E-C9AEDEC8F853}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
