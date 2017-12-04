@@ -10,7 +10,10 @@ namespace ZorkBorkTestProject
         [TestMethod]
         public void ItemTest()
         {
-            KaartItemBaseClass.Beschrijving
+            KaartItemBaseClass blah = new KaartItemBaseClass();
+            blah.Beschrijving = "Hoi Testboodschap";
+            Assert.AreEqual("Hoi Testboodschap",blah.Beschrijving);
         }
+
     }
 }

@@ -9,7 +9,7 @@ namespace ZorkBork
     public class KaartItemBaseClass
     {
         private string beschrijving;
-
+        
         public string Beschrijving
         {
             get { return beschrijving; }
