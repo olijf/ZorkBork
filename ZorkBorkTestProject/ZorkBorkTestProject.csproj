@@ -49,7 +49,8 @@
     <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="KaartItemBaseClassTest.cs" />
+    <Compile Include="KaartItemsCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitTestSpeler.cs" />
     <Compile Include="UnitTestSpelerOud.cs" />
