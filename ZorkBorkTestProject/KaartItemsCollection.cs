@@ -46,12 +46,14 @@ namespace ZorkBorkTestProject
         {
             var kaartItems = new KaartItemsCollection();
             kaartItems.MaakNieuweKaart();
+            Console.Write(kaartItems.ToString());
             using (var writer = new StringWriter())
             {
                 Console.SetOut(writer);
 
                 Console.Write(kaartItems.ToString());
                 Assert.AreEqual(kaartItems.ToString(), writer.ToString());
+
             }
         }
     }

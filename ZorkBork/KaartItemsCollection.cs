@@ -13,17 +13,18 @@ namespace ZorkBork
             var Rand = new Random();
             for (int i = 0; i < 32; i++)
             {
-                Add(new KaartItemBaseClass() { Beschrijving = string.Format("ItemID {0}", Rand.Next(10, 100)) });
+                Add(new KaartItemBaseClass() { Beschrijving = string.Format("ItemID {0}", Rand.Next(10, 100)), InteractieRichting = (KaartItemBaseClass.Richting)Rand.Next(0, 4) });
             }
 
         }
         public override string ToString()
         {
+            var desc = String.Empty;
             foreach (var item in this)
             {
-                var desc = new String.Format("Je staat in {0} je kan de volgende acties uitvoeren {1}", item.Beschrijving, item.);
+                desc += String.Format("Je staat in {0} je kan de volgende richting uit {1} {2}", item.Beschrijving, item.InteractieRichting, Environment.NewLine);
             }
-            return 
+            return desc;
         }
     }
 }
