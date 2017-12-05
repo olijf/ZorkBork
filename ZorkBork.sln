@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZorkBorkTestProject", "Zork
 		{2271E33C-3FBE-4D4C-977E-C9AEDEC8F853} = {2271E33C-3FBE-4D4C-977E-C9AEDEC8F853}
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AB7096E9-EE8A-49D7-9B0F-21C95EE00470}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

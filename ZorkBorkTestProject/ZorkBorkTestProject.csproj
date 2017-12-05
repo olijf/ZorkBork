@@ -46,10 +46,13 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTestSpeler.cs" />
+    <Compile Include="UnitTestSpelerOud.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
