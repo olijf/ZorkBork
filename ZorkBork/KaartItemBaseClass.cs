@@ -16,5 +16,14 @@ namespace ZorkBork
             set { beschrijving = value; }
         }
 
+        public void Interact()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool InteractionHasHappened()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
