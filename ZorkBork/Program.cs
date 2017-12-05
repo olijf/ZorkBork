@@ -10,8 +10,11 @@ namespace ZorkBork
     {
         static void Main(string[] args)
         {
-            throw new NotImplementedException();
-            /// http://ilspy.net/ common intermediate language decompiler
+            var kaartItemsCollection = new KaartItemsCollection();
+            kaartItemsCollection.MaakNieuweKaart();
+            Console.WriteLine(kaartItemsCollection.ElementAt(1));
+            int interactieKey;
+            interactieKey = Console.Read();
         }
     }
 }

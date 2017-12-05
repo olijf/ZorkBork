@@ -40,5 +40,9 @@ namespace ZorkBork
         {
             throw new NotImplementedException();
         }
+        public override string ToString()
+        {
+            return String.Format("Je staat in {0} je kan de volgende richting uit {1}", Beschrijving, InteractieRichting);
+        }
     }
 }

@@ -22,7 +22,7 @@ namespace ZorkBork
             var desc = String.Empty;
             foreach (var item in this)
             {
-                desc += String.Format("Je staat in {0} je kan de volgende richting uit {1} {2}", item.Beschrijving, item.InteractieRichting, Environment.NewLine);
+                desc += String.Format("{0} {1}",item, Environment.NewLine);
             }
             return desc;
         }
