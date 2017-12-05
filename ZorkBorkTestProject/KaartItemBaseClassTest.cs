@@ -28,7 +28,6 @@ namespace ZorkBorkTestProject
             var kaartItemBaseClass = new KaartItemBaseClass();
             kaartItemBaseClass.Interact();
             Assert.IsTrue(kaartItemBaseClass.InteractionHasHappened());
-
         }
     }
 }

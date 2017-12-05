@@ -8,6 +8,13 @@ namespace ZorkBork
 {
     public class KaartItemBaseClass
     {
+        public enum Interactie
+        {   
+            BeweegOmhoog,
+            BeweegOmlaag,
+            BeweegRechts,
+            BeweegLinks
+        };
         private string beschrijving;
         
         public string Beschrijving
@@ -15,6 +22,14 @@ namespace ZorkBork
             get { return beschrijving; }
             set { beschrijving = value; }
         }
+        private Interactie interactie;
+
+        public Interactie InteractieRichting
+        {
+            get { return interactie; }
+            set { interactie = value; }
+        }
+
 
         public void Interact()
         {
