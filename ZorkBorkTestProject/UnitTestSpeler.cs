@@ -35,8 +35,6 @@ namespace ZorkBorkTestProject
             speler.verhoogScore(100);
             speler.verlaagScore(50);
             Assert.AreEqual(50, speler.Score);
-            speler.verlaagScore(50);
-            Assert.AreEqual(0, speler.Score);
         }
 
         [TestMethod]
