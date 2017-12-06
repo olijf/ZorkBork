@@ -9,9 +9,30 @@ namespace ZorkBork
         {
             var kaartItemsCollection = new Kaart();
             kaartItemsCollection.MaakNieuweKaart();
-            Console.WriteLine(kaartItemsCollection.ElementAt(1));
-            int interactieKey;
-            interactieKey = Console.Read();
+            var playerPoint = new Positie(0, 0);
+            for (; ; )
+            {
+                Console.WriteLine(kaartItemsCollection.GetKaartItemAt(playerPoint.x,playerPoint.y));
+                var interactieKey = Console.ReadKey().Key;
+                switch (interactieKey)
+                {
+                    case ConsoleKey.LeftArrow:
+                        playerPoint.y--;
+                        break;
+                    case ConsoleKey.UpArrow:
+                        playerPoint.x++;
+                        break;
+                    case ConsoleKey.RightArrow:
+                        playerPoint.y++;
+                        break;
+                    case ConsoleKey.DownArrow:
+                        playerPoint.x--;
+                        break;
+                    case ConsoleKey.Delete:
+                        Environment.Exit(0);
+                        break;
+                }
+            }
         }
     }
 }

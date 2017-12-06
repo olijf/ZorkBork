@@ -7,9 +7,9 @@ namespace ZorkBork
 {
     public enum Richting
     {
+        Links,
         Omhoog,
-        Omlaag,
         Rechts,
-        Links
+        Omlaag
     }
 }
