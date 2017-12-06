@@ -42,14 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Richting.cs" />
     <Compile Include="Speler.cs" />
-    <Compile Include="KaartItemBaseClass.cs" />
-    <Compile Include="KaartItemsCollection.cs" />
+    <Compile Include="KaartItem.cs" />
+    <Compile Include="Kaart.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Klassendiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

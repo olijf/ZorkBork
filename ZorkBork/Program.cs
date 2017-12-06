@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ZorkBork
 {
@@ -10,7 +7,7 @@ namespace ZorkBork
     {
         static void Main(string[] args)
         {
-            var kaartItemsCollection = new KaartItemsCollection();
+            var kaartItemsCollection = new Kaart();
             kaartItemsCollection.MaakNieuweKaart();
             Console.WriteLine(kaartItemsCollection.ElementAt(1));
             int interactieKey;

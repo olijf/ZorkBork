@@ -1,23 +1,22 @@
-﻿using System;
-using ZorkBork;
+﻿using ZorkBork;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace ZorkBorkTestProject
 {
     [TestClass]
-    public class KaartItemBaseClassTest
+    public class KaartItemTest
     {
         [TestMethod]
         public void CreateKaartItemBaseClassTest()
         {
-            var kaartItemBaseClass = new KaartItemBaseClass();
+            var kaartItemBaseClass = new KaartItem();
             Assert.IsNotNull(kaartItemBaseClass);
         }
 
         [TestMethod]
         public void AddDiscriptionKaartItemBaseClassTest()
         {
-            var kaartItemBaseClass = new KaartItemBaseClass();
+            var kaartItemBaseClass = new KaartItem();
             kaartItemBaseClass.Beschrijving = "test beschrijving";
             Assert.AreEqual("test beschrijving", kaartItemBaseClass.Beschrijving);
         }
@@ -25,7 +24,7 @@ namespace ZorkBorkTestProject
         [TestMethod]
         public void InteractWithKaartItemBaseClass()
         {
-            var kaartItemBaseClass = new KaartItemBaseClass();
+            var kaartItemBaseClass = new KaartItem();
             kaartItemBaseClass.Interact();
             Assert.IsTrue(kaartItemBaseClass.InteractionHasHappened());
         }

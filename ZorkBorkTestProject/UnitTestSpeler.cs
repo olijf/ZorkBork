@@ -40,7 +40,7 @@ namespace ZorkBorkTestProject
         }
 
         [TestMethod]
-        public void VerlaagScoreNegatief()
+        public void VerlaagScoreKanNietNegatief()
         {
             var speler = new Speler();
             speler.verlaagScore(50);

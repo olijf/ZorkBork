@@ -1,20 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ZorkBork
 {
-    public class KaartItemBaseClass
+    public class KaartItem
     {
-        public enum Richting
-        {   
-            Omhoog,
-            Omlaag,
-            Rechts,
-            Links
-        };
+
         private string beschrijving;
         
         public string Beschrijving
@@ -38,6 +28,7 @@ namespace ZorkBork
 
         public bool InteractionHasHappened()
         {
+            
             throw new NotImplementedException();
         }
         public override string ToString()
