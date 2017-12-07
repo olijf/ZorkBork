@@ -12,12 +12,19 @@ namespace ZorkBork
             var playerPoint = new Positie(0, 0);
             for (; ; )
             {
-                Console.WriteLine(kaartItemsCollection.GetKaartItemAt(playerPoint.x,playerPoint.y));
+                Console.WriteLine(kaartItemsCollection.GetKaartItemAt(playerPoint.x, playerPoint.y));
                 var interactieKey = Console.ReadKey().Key;
                 switch (interactieKey)
                 {
                     case ConsoleKey.LeftArrow:
-                        playerPoint.y--;
+                        if (kaartItemsCollection.GetKaartItemAt(playerPoint.x, playerPoint.y) == ConsoleKey.LeftArrow)
+                        {
+                            playerPoint.y--;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Kan Niet!!!");
+                        }
                         break;
                     case ConsoleKey.UpArrow:
                         playerPoint.x++;
