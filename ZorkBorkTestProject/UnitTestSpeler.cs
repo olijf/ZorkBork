@@ -53,5 +53,18 @@ namespace ZorkBorkTestProject
             speler.resetScore();
             Assert.AreEqual(0, speler.Score);
         }
+
+        [TestMethod]
+        public void CheckForCorrectStartPositie()
+        {
+            var speler = new Speler();
+            Assert.IsTrue((speler.Positie.X == 0) && (speler.Positie.Y ==0));
+        }
+
+        [TestMethod]
+        public void TestOmhoog()
+        {
+
+        }
     }
 }
