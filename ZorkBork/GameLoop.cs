@@ -27,16 +27,16 @@ namespace ZorkBork
                 switch (interactieKey)
                 {
                     case ConsoleKey.LeftArrow:
-                        _speler.UpdatePositie((int)Richting.Rechts, 10);
+                        _speler.UpdatePositie((int)Richting.Rechts);
                         break;
                     case ConsoleKey.UpArrow:
-                        _speler.UpdatePositie((int)Richting.Omhoog, 10);
+                        _speler.UpdatePositie((int)Richting.Omhoog);
                         break;
                     case ConsoleKey.RightArrow:
-                        _speler.UpdatePositie((int)Richting.Rechts, 10);
+                        _speler.UpdatePositie((int)Richting.Rechts);
                         break;
                     case ConsoleKey.DownArrow:
-                        _speler.UpdatePositie((int)Richting.Omlaag, 10);
+                        _speler.UpdatePositie((int)Richting.Omlaag);
                         break;
                     case ConsoleKey.Delete:
                         //Exit game

@@ -17,8 +17,10 @@ namespace ZorkBork
                 var nieuwKaartItem = new KaartItem();
                 nieuwKaartItem.Beschrijving = string.Format("Discription {0}", i);
                 var nieuwRichting = new List<Richting>();
-                nieuwRichting.Add((Richting)Rand.Next(0, 3));
-                nieuwRichting.Add((Richting)Rand.Next(0, 3));
+                nieuwRichting.Add(Richting.Omhoog);
+                nieuwRichting.Add(Richting.Omlaag);
+                nieuwRichting.Add(Richting.Links);
+                nieuwRichting.Add(Richting.Rechts);
                 nieuwKaartItem.InteractieRichting = nieuwRichting;
                 Add(nieuwKaartItem);
             }
@@ -75,7 +77,7 @@ namespace ZorkBork
         {
             if (x < 0 || x > SpeelVeldGrootte || y < 0 || y > SpeelVeldGrootte)
             {
-                return this[0];
+                return null;
             }
             return this[x * SpeelVeldGrootte + y];
         }

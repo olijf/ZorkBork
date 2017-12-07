@@ -12,14 +12,14 @@ namespace ZorkBork
 
             //Kaart laden
             var serializer = new XmlSerializer(typeof(Kaart));
-            var kaartItemsCollection = new Kaart();
+            var kaartItemsList = new Kaart();
             int.TryParse(ConfigurationManager.AppSettings["speelVeldGrootte"], out int grootte);
-            kaartItemsCollection.SpeelVeldGrootte = grootte;
-            kaartItemsCollection.MaakNieuweKaart();
+            kaartItemsList.SpeelVeldGrootte = grootte;
+            kaartItemsList.MaakNieuweKaart();
             var kaartBestandsNaam = ConfigurationManager.AppSettings["kaartBestand"];
             using (var streamWriter = new StreamWriter(kaartBestandsNaam))
             {
-                serializer.Serialize(streamWriter, kaartItemsCollection);
+                serializer.Serialize(streamWriter, kaartItemsList);
             }
             using (var streamReader = new StreamReader(kaartBestandsNaam))
             {
@@ -29,13 +29,12 @@ namespace ZorkBork
             }
 
             //Initieren speler 
-            var speler = new Speler();
+            var speler = new Speler(kaartItemsList.SpeelVeldGrootte);
 
             //Game loop
-            var GL = new GameLoop(kaartItemsCollection, speler);
+            var GL = new GameLoop(kaartItemsList, speler);
 
             GL.Start();
-            }
         }
     }
 }

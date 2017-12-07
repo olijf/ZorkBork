@@ -14,6 +14,8 @@ namespace ZorkBork
 
     public class Speler
     {
+        public int Kaartbereik { get; private set; }
+
         private int score;
 
         public int Score
@@ -31,8 +33,9 @@ namespace ZorkBork
         }
 
 
-        public Speler()
+        public Speler(int kaartbereik)
         {
+            Kaartbereik = kaartbereik;
             score = 0;
             positie = new Point(0, 0);
         }
@@ -60,7 +63,7 @@ namespace ZorkBork
             score = 0;
         }
 
-        public bool UpdatePositie(int richting, int kaartbereik)
+        public bool UpdatePositie(int richting)
         {
             int nieuweWaarde;
 
@@ -68,7 +71,7 @@ namespace ZorkBork
             {
                 case (int)Richting.Omhoog:
                     nieuweWaarde = Positie.Y + 1;
-                    if (nieuweWaarde <= kaartbereik)
+                    if (nieuweWaarde <= Kaartbereik)
                     {
                         Positie = new Point(Positie.X, Positie.Y + 1);
                         return true;
@@ -90,7 +93,7 @@ namespace ZorkBork
                     }
                 case (int)Richting.Rechts:
                     nieuweWaarde = Positie.X + 1;
-                    if (nieuweWaarde <= kaartbereik)
+                    if (nieuweWaarde <= Kaartbereik)
                     {
                         Positie = new Point(Positie.X + 1, Positie.Y);
                         return true;
