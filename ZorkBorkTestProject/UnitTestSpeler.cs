@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ZorkBork;
 
 namespace ZorkBorkTestProject
 {
@@ -64,7 +65,9 @@ namespace ZorkBorkTestProject
         [TestMethod]
         public void TestOmhoog()
         {
-
+            var speler = new Speler();
+            speler.UpdatePositie(0, 10);
+            Assert.AreEqual(1, speler.Positie.Y);
         }
     }
 }
