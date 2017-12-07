@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZorkBorkTestProject", "Zork
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AB7096E9-EE8A-49D7-9B0F-21C95EE00470}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapCreatorTool", "MapCreatorTool\MapCreatorTool.csproj", "{C51E5D6A-0A2F-4E90-8D66-1C5E559F6E92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{98B0280C-F204-436A-A1A7-AA41421FCF63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98B0280C-F204-436A-A1A7-AA41421FCF63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98B0280C-F204-436A-A1A7-AA41421FCF63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C51E5D6A-0A2F-4E90-8D66-1C5E559F6E92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C51E5D6A-0A2F-4E90-8D66-1C5E559F6E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C51E5D6A-0A2F-4E90-8D66-1C5E559F6E92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C51E5D6A-0A2F-4E90-8D66-1C5E559F6E92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
