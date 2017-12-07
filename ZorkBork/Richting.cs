@@ -10,6 +10,7 @@ namespace ZorkBork
         Links,
         Omhoog,
         Rechts,
-        Omlaag
+        Omlaag,
+        Leeg
     }
 }

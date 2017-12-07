@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Xml.Serialization;
+using System.Configuration;
 
 namespace ZorkBork
 {
@@ -12,12 +13,16 @@ namespace ZorkBork
             //Kaart laden
             var serializer = new XmlSerializer(typeof(Kaart));
             var kaartItemsCollection = new Kaart();
+            int grootte;
+            int.TryParse(ConfigurationManager.AppSettings["speelVeldGrootte"], out grootte);
+            kaartItemsCollection.SpeelVeldGrootte = grootte;
             kaartItemsCollection.MaakNieuweKaart();
-            using (var streamWriter = new StreamWriter(@"map.xml"))
+            var kaartBestandsNaam = ConfigurationManager.AppSettings["kaartBestand"];
+            using (var streamWriter = new StreamWriter(kaartBestandsNaam))
             {
                 serializer.Serialize(streamWriter, kaartItemsCollection);
             }
-            using (var streamReader = new StreamReader(@"map.xml"))
+            using (var streamReader = new StreamReader(kaartBestandsNaam))
             {
                 Kaart kaartItems = (Kaart)serializer.Deserialize(streamReader);
                 Console.WriteLine(kaartItems);

@@ -1,6 +1,6 @@
 ﻿namespace ZorkBork
 {
-    internal class Positie
+    public class Positie
     {
         public int x;
         public int y;

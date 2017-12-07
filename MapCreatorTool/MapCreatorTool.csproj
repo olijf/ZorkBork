@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2271E33C-3FBE-4D4C-977E-C9AEDEC8F853}</ProjectGuid>
+    <ProjectGuid>{C51E5D6A-0A2F-4E90-8D66-1C5E559F6E92}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ZorkBork</RootNamespace>
-    <AssemblyName>ZorkBork</AssemblyName>
+    <RootNamespace>MapCreatorTool</RootNamespace>
+    <AssemblyName>MapCreatorTool</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,9 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,18 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GameLoop.cs" />
-    <Compile Include="Positie.cs" />
-    <Compile Include="Richting.cs" />
-    <Compile Include="Speler.cs" />
-    <Compile Include="KaartItem.cs" />
-    <Compile Include="Kaart.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Klassendiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZorkBork\ZorkBork.csproj">
+      <Project>{2271e33c-3fbe-4d4c-977e-c9aedec8f853}</Project>
+      <Name>ZorkBork</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
