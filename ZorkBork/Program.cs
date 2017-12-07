@@ -12,8 +12,7 @@ namespace ZorkBork
         {
             var serializer = new XmlSerializer(typeof(Kaart));
             var kaartItemsCollection = new Kaart();
-            int grootte;
-            int.TryParse(ConfigurationManager.AppSettings["speelVeldGrootte"], out grootte);
+            int.TryParse(ConfigurationManager.AppSettings["speelVeldGrootte"], out int grootte);
             kaartItemsCollection.SpeelVeldGrootte = grootte;
             kaartItemsCollection.MaakNieuweKaart();
             var kaartBestandsNaam = ConfigurationManager.AppSettings["kaartBestand"];
