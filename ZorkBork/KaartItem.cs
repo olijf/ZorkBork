@@ -1,20 +1,25 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Xml.Serialization;
 
 namespace ZorkBork
 {
+    [XmlType]
     public class KaartItem
     {
 
         private string beschrijving;
         
+        [XmlElement]
         public string Beschrijving
         {
             get { return beschrijving; }
             set { beschrijving = value; }
         }
-        private Richting interactieRichting;
+        private List<Richting> interactieRichting;
 
-        public Richting InteractieRichting
+        [XmlElement]
+        public List<Richting> InteractieRichting
         {
             get { return interactieRichting; }
             set { interactieRichting = value; }

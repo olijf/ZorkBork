@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 
 namespace ZorkBork
 {
+    [XmlType]
     public class Kaart : List<KaartItem>
     {
 
@@ -11,7 +13,11 @@ namespace ZorkBork
             var Rand = new Random();
             for (int i = 0; i < 36; i++)
             {
-                Add(new KaartItem() { Beschrijving = string.Format("ItemID {0}", Rand.Next(10, 100)), InteractieRichting = (Richting)Rand.Next(0, 4) });
+                var nieuwKaartItem = new KaartItem();
+                nieuwKaartItem.Beschrijving = string.Format("Discription {0}", i);
+                nieuwKaartItem.InteractieRichting.Add((Richting)Rand.Next(0, 4));
+                nieuwKaartItem.InteractieRichting.Add((Richting)Rand.Next(0, 4));
+                Add(nieuwKaartItem);
             }
 
         }
