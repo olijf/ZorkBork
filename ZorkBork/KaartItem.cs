@@ -38,7 +38,12 @@ namespace ZorkBork
         }
         public override string ToString()
         {
-            return String.Format("Je staat in {0} je kan de volgende richting uit {1}", Beschrijving, InteractieRichting);
+            string returnString = String.Format("Je staat in {0} je kan de volgende richting uit: ", Beschrijving);
+            foreach (var item in InteractieRichting)
+            {
+                returnString += String.Format("{0} ",item);
+            }
+            return returnString;
         }
     }
 }

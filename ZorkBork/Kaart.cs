@@ -15,8 +15,10 @@ namespace ZorkBork
             {
                 var nieuwKaartItem = new KaartItem();
                 nieuwKaartItem.Beschrijving = string.Format("Discription {0}", i);
-                nieuwKaartItem.InteractieRichting.Add((Richting)Rand.Next(0, 4));
-                nieuwKaartItem.InteractieRichting.Add((Richting)Rand.Next(0, 4));
+                var nieuwRichting = new List<Richting>();
+                nieuwRichting.Add((Richting)Rand.Next(0, 3));
+                nieuwRichting.Add((Richting)Rand.Next(0, 3));
+                nieuwKaartItem.InteractieRichting = nieuwRichting;
                 Add(nieuwKaartItem);
             }
 

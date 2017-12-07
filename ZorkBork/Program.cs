@@ -22,7 +22,7 @@ namespace ZorkBork
                 Console.WriteLine(kaartItems);
 
             }
-
+            /*
             var playerPoint = new Positie(0, 0);
             for (; ; )
             {
@@ -62,7 +62,7 @@ namespace ZorkBork
                         Environment.Exit(0);
                         break;
                 }
-            }
+            }*/
         }
     }
 }
