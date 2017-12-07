@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace ZorkBork
 {
+    public enum Richting
+    {
+        Omhoog,
+        Omlaag,
+        Rechts,
+        Links
+    };
+
     public class KaartItemBaseClass
     {
-        public enum Richting
-        {   
-            Omhoog,
-            Omlaag,
-            Rechts,
-            Links
-        };
+
         private string beschrijving;
         
         public string Beschrijving
