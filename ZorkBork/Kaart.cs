@@ -7,6 +7,11 @@ namespace ZorkBork
     [XmlType]
     public class Kaart : List<KaartItem>
     {
+        private Positie Positie;
+        public Kaart()
+        {
+            Positie = new Positie(0, 0);
+        }
         public int SpeelVeldGrootte { get; set; }
 
         public void MaakNieuweKaart()
@@ -67,19 +72,35 @@ namespace ZorkBork
             return desc;
         }
 
-        /*public KaartItem GetNewLocation(KaartItem current, Richting richting)
+        public void UpdatePositie(Richting richting)
         {
-            //var stepSize = 1 * (int.Parse(richting) % 2 == 0) ? Math.Sqrt(this.Count) : 1;
-            return this[this.IndexOf(current) + stepSize];
-        }
-        */
-        public KaartItem GetKaartItemAt(int x, int y)
-        {
-            if (x < 0 || x > SpeelVeldGrootte || y < 0 || y > SpeelVeldGrootte)
+            switch (richting)
             {
-                return null;
+                case Richting.Omhoog:
+                    Positie.y = BoundsCheck(Positie.y + 1) ? Positie.y + 1 : Positie.y;
+                    break;
+                case Richting.Omlaag:
+                    Positie.y = BoundsCheck(Positie.y - 1) ? Positie.y - 1 : Positie.y;
+                    break;
+                case Richting.Rechts:
+                    Positie.x = BoundsCheck(Positie.x + 1) ? Positie.x + 1 : Positie.x;
+                    break;
+                case Richting.Links:
+                    Positie.x = BoundsCheck(Positie.x - 1) ? Positie.x - 1 : Positie.x;
+                    break;
             }
-            return this[x * SpeelVeldGrootte + y];
+        }
+
+        private bool BoundsCheck(int nieuweWaarde)
+        {
+            if (nieuweWaarde <= SpeelVeldGrootte || nieuweWaarde > 0)
+                return false;
+            return true;
+        }
+
+        public KaartItem GetCurrentPosition()
+        {
+            return this[Positie.x * SpeelVeldGrootte + Positie.y];
         }
     }
 }
