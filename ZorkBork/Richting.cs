@@ -7,10 +7,10 @@ namespace ZorkBork
 {
     public enum Richting
     {
-        Links,
-        Omhoog,
-        Rechts,
-        Omlaag,
+        Links = ConsoleKey.LeftArrow,
+        Omhoog = ConsoleKey.UpArrow,
+        Rechts = ConsoleKey.RightArrow,
+        Omlaag = ConsoleKey.DownArrow,
         Leeg
     }
 }

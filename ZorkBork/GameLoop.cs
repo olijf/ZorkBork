@@ -22,26 +22,17 @@ namespace ZorkBork
         {
             for (; ; )
             {
-                Console.WriteLine(_kaartItemsCollection.GetKaartItemAt(_speler.Positie.X, _speler.Positie.Y));
+                Console.WriteLine(_kaartItemsCollection.GetCurrentPosition());
                 var interactieKey = Console.ReadKey().Key;
-                switch (interactieKey)
+                if (interactieKey == ConsoleKey.Delete)
                 {
-                    case ConsoleKey.LeftArrow:
-                        _speler.UpdatePositie((int)Richting.Rechts);
-                        break;
-                    case ConsoleKey.UpArrow:
-                        _speler.UpdatePositie((int)Richting.Omhoog);
-                        break;
-                    case ConsoleKey.RightArrow:
-                        _speler.UpdatePositie((int)Richting.Rechts);
-                        break;
-                    case ConsoleKey.DownArrow:
-                        _speler.UpdatePositie((int)Richting.Omlaag);
-                        break;
-                    case ConsoleKey.Delete:
-                        //Exit game
-                        Environment.Exit(0);
-                        break;
+                    //Exit game
+                    Environment.Exit(0);
+
+                }
+                else
+                {
+                    _kaartItemsCollection.UpdatePositie((Richting)interactieKey);
                 }
             }
         }

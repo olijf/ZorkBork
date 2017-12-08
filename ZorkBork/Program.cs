@@ -29,7 +29,7 @@ namespace ZorkBork
             }
 
             //Initieren speler 
-            var speler = new Speler(kaartItemsList.SpeelVeldGrootte);
+            var speler = new Speler();
 
             //Game loop
             var GL = new GameLoop(kaartItemsList, speler);
