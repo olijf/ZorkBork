@@ -44,10 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Deur.cs" />
     <Compile Include="GameLoop.cs" />
     <Compile Include="Positie.cs" />
     <Compile Include="Richting.cs" />
-    <Compile Include="Setting.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Sleutels.cs" />
     <Compile Include="Speler.cs" />
     <Compile Include="KaartItem.cs" />
     <Compile Include="Kaart.cs" />

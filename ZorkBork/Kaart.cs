@@ -34,6 +34,7 @@ namespace ZorkBork
         [XmlAttribute("SpeelVeldGrootte")]
         public int SpeelVeldGrootte { get; set; }
 
+        /*
         public void MaakNieuweKaart()
         {
             var Rand = new Random();
@@ -51,6 +52,7 @@ namespace ZorkBork
             }
 
         }
+        */
 
         public string AsDrawing()
         {
