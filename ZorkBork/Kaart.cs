@@ -10,7 +10,7 @@ namespace ZorkBork
         private Positie Positie;
         public Kaart()
         {
-            Positie = new Positie(0, 0);
+            Positie = new Positie { x=0, y=0 };
         }
         public int SpeelVeldGrootte { get; set; }
 
@@ -93,9 +93,10 @@ namespace ZorkBork
 
         private bool BoundsCheck(int nieuweWaarde)
         {
-            if (nieuweWaarde <= SpeelVeldGrootte || nieuweWaarde > 0)
-                return false;
-            return true;
+            if (nieuweWaarde < SpeelVeldGrootte  && nieuweWaarde >= 0 ) { 
+                return true;
+            }
+            return false;
         }
 
         public KaartItem GetCurrentPosition()
