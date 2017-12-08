@@ -25,7 +25,7 @@ namespace ZorkBorkTestProject
         public void VerhoogScore()
         {
             var speler = new Speler();
-            speler.verhoogScore(100);
+            speler.VerhoogScore(100);
             Assert.AreEqual(100, speler.Score);
         }
 
@@ -33,8 +33,8 @@ namespace ZorkBorkTestProject
         public void VerlaagScorePositief()
         {
             var speler = new Speler();
-            speler.verhoogScore(100);
-            speler.verlaagScore(50);
+            speler.VerhoogScore(100);
+            speler.VerlaagScore(50);
             Assert.AreEqual(50, speler.Score);
         }
 
@@ -42,7 +42,7 @@ namespace ZorkBorkTestProject
         public void VerlaagScoreKanNietNegatief()
         {
             var speler = new Speler();
-            speler.verlaagScore(50);
+            speler.VerlaagScore(50);
             Assert.AreEqual(0, speler.Score);
         }
 
@@ -50,8 +50,8 @@ namespace ZorkBorkTestProject
         public void ResetScore()
         {
             var speler = new Speler();
-            speler.verhoogScore(50);
-            speler.resetScore();
+            speler.VerhoogScore(50);
+            speler.ResetScore();
             Assert.AreEqual(0, speler.Score);
         }
 
