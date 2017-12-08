@@ -99,18 +99,26 @@ namespace ZorkBork
                 case Richting.Omhoog:
                     if (GetCurrentPosition().IsRichtingAllowed(richting))
                         Positie.y = BoundsCheck(Positie.y + 1) ? Positie.y + 1 : Positie.y;
+                    else
+                        Console.WriteLine("Dat kan niet!");
                     break;
                 case Richting.Omlaag:
                     if (GetCurrentPosition().IsRichtingAllowed(richting))
                         Positie.y = BoundsCheck(Positie.y - 1) ? Positie.y - 1 : Positie.y;
+                    else
+                        Console.WriteLine("Dat kan niet!");
                     break;
                 case Richting.Rechts:
                     if (GetCurrentPosition().IsRichtingAllowed(richting))
                         Positie.x = BoundsCheck(Positie.x + 1) ? Positie.x + 1 : Positie.x;
+                    else
+                        Console.WriteLine("Dat kan niet!");
                     break;
                 case Richting.Links:
                     if (GetCurrentPosition().IsRichtingAllowed(richting))
                         Positie.x = BoundsCheck(Positie.x - 1) ? Positie.x - 1 : Positie.x;
+                    else
+                        Console.WriteLine("Dat kan niet!");
                     break;
             }
         }
