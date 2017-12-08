@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Xml.Serialization;
 
 namespace ZorkBork
@@ -7,11 +8,30 @@ namespace ZorkBork
     [XmlType]
     public class Kaart : List<KaartItem>
     {
-        private Positie Positie;
-        public Kaart()
+        private static Kaart instance;
+        [XmlAttribute("Positie")]
+        public Positie Positie = new Positie { x = 0, y = 0 };
+
+        private Kaart()
         {
-            Positie = new Positie { x=0, y=0 };
+
         }
+        public static Kaart Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    var serializer = new XmlSerializer(typeof(Kaart));
+                    using (var streamReader = new StreamReader(Settings.GetValue("kaartBestand")))
+                    {
+                        instance = (Kaart)serializer.Deserialize(streamReader);
+                    };
+                }
+                return instance;
+            }
+        }
+        [XmlAttribute("SpeelVeldGrootte")]
         public int SpeelVeldGrootte { get; set; }
 
         public void MaakNieuweKaart()
@@ -93,7 +113,8 @@ namespace ZorkBork
 
         private bool BoundsCheck(int nieuweWaarde)
         {
-            if (nieuweWaarde < SpeelVeldGrootte  && nieuweWaarde >= 0 ) { 
+            if (nieuweWaarde < SpeelVeldGrootte && nieuweWaarde >= 0)
+            {
                 return true;
             }
             return false;

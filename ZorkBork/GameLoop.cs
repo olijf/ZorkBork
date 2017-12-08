@@ -9,12 +9,10 @@ namespace ZorkBork
 
     class GameLoop
     {
-        private Kaart _kaartItemsCollection;
         private Speler _speler;
 
-        public GameLoop(Kaart kaartItemsCollection, Speler speler)
+        public GameLoop(Speler speler)
         {
-            _kaartItemsCollection = kaartItemsCollection;
             _speler = speler;
         }
 
@@ -22,7 +20,7 @@ namespace ZorkBork
         {
             for (; ; )
             {
-                Console.WriteLine(_kaartItemsCollection.GetCurrentPosition());
+                Console.WriteLine(Kaart.Instance.GetCurrentPosition());
                 var interactieKey = Console.ReadKey().Key;
                 if (interactieKey == ConsoleKey.Delete)
                 {
@@ -32,7 +30,7 @@ namespace ZorkBork
                 }
                 else
                 {
-                    _kaartItemsCollection.UpdatePositie((Richting)interactieKey);
+                    Kaart.Instance.UpdatePositie((Richting)interactieKey);
                 }
             }
         }

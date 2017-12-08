@@ -13,8 +13,8 @@ namespace MapCreatorTool
         static void Main(string[] args)
         {
             var serializer = new XmlSerializer(typeof(ZorkBork.Kaart));
-            var kaartItemsCollection = new ZorkBork.Kaart();
-            kaartItemsCollection.SpeelVeldGrootte = 6;
+            var kaartItemsCollection = ZorkBork.Kaart.Instance;
+            kaartItemsCollection.SpeelVeldGrootte = 10;
             var kaartItemRichting = new List<ZorkBork.Richting>();
             kaartItemRichting.Add(ZorkBork.Richting.Omlaag);
             var kaartItem = new ZorkBork.KaartItem()

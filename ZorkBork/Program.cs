@@ -9,30 +9,18 @@ namespace ZorkBork
     {
         static void Main(string[] args)
         {
-
-            //Kaart laden
-            var serializer = new XmlSerializer(typeof(Kaart));
-            var kaartItemsList = new Kaart();
-            int.TryParse(ConfigurationManager.AppSettings["speelVeldGrootte"], out int grootte);
-            kaartItemsList.SpeelVeldGrootte = grootte;
-            kaartItemsList.MaakNieuweKaart();
-            var kaartBestandsNaam = ConfigurationManager.AppSettings["kaartBestand"];
-            using (var streamWriter = new StreamWriter(kaartBestandsNaam))
-            {
-                serializer.Serialize(streamWriter, kaartItemsList);
-            }
-            using (var streamReader = new StreamReader(kaartBestandsNaam))
-            {
-                Kaart kaartItems = (Kaart)serializer.Deserialize(streamReader);
-                Console.WriteLine(kaartItems);
-
-            }
-
             //Initieren speler 
             var speler = new Speler();
+            Kaart.Instance.SpeelVeldGrootte = 10;
+
+            var serializer = new XmlSerializer(typeof(ZorkBork.Kaart));
+            using (var streamWriter = new StreamWriter(@"map1.xml"))
+            {
+                serializer.Serialize(streamWriter, Kaart.Instance);
+            }
 
             //Game loop
-            var GL = new GameLoop(kaartItemsList, speler);
+            var GL = new GameLoop(speler);
 
             GL.Start();
         }
