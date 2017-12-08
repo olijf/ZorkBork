@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.QualityTools.Testing.Fakes;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.IO;
 using System.Text.RegularExpressions;
@@ -12,47 +13,82 @@ namespace ZorkBorkTestProject
         [TestMethod]
         public void CreateKaartItemsCollectionObject()
         {
-            var kaartItems = new Kaart();
-            Assert.IsNotNull(kaartItems);
+
+            using (ShimsContext.Create())
+            {
+                ZorkBork.Fakes.ShimSettings.GetValueString = (_) =>
+                {
+                    return @"C:\Users\Kruk\source\repos\ZorkBork\ZorkBork\bin\Debug\map.xml";
+
+                };
+                Assert.IsNotNull(Kaart.Instance);
+            }
         }
         [TestMethod]
         public void AddKaartItemsToCollection()
         {
-            var kaartItems = new Kaart();
-            kaartItems.Add(new KaartItem());
-            Assert.AreEqual(1, kaartItems.Count);
+            using (ShimsContext.Create())
+            {
+                ZorkBork.Fakes.ShimSettings.GetValueString = (_) =>
+            {
+                return @"C:\Users\Kruk\source\repos\ZorkBork\ZorkBork\bin\Debug\map.xml";
+
+            };
+                Kaart.Instance.Add(new KaartItem());
+                Assert.AreEqual(101, Kaart.Instance.Count);
+            }
         }
         [TestMethod]
         public void RemoveKaartItemsFromCollection()
         {
-            var kaartItems = new Kaart();
-            var kaartItem = new KaartItem();
-            kaartItems.Add(kaartItem);
-            kaartItems.Remove(kaartItem);
-            Assert.AreEqual(0, kaartItems.Count);
+            using (ShimsContext.Create())
+            {
+                ZorkBork.Fakes.ShimSettings.GetValueString = (_) =>
+                {
+                    return @"C:\Users\Kruk\source\repos\ZorkBork\ZorkBork\bin\Debug\map.xml";
+
+                };
+                var kaartItem = new KaartItem();
+                Kaart.Instance.Clear();
+                Assert.AreEqual(0, Kaart.Instance.Count);
+            }
         }
         [TestMethod]
         public void VulKaartMetitems()
         {
-            var kaartItems = new Kaart();
-            kaartItems.MaakNieuweKaart();
-            Assert.AreEqual(32, kaartItems.Count);
+            using (ShimsContext.Create())
+            {
+                ZorkBork.Fakes.ShimSettings.GetValueString = (_) =>
+                {
+                    return @"C:\Users\Kruk\source\repos\ZorkBork\ZorkBork\bin\Debug\map.xml";
+
+                };
+                Kaart.Instance.MaakNieuweKaart();
+                Assert.AreEqual(1, Kaart.Instance.Count);
+            }
         }
         [TestMethod]
         public void LaatKaartZien()
         {
-            var kaartItems = new Kaart();
-            kaartItems.Add(new KaartItem());
-            kaartItems.Add(new KaartItem());
-            kaartItems.Add(new KaartItem());
-            Console.Write(kaartItems.ToString());
-            using (var writer = new StringWriter())
+            using (ShimsContext.Create())
             {
-                Console.SetOut(writer);
+                ZorkBork.Fakes.ShimSettings.GetValueString = (_) =>
+                {
+                    return @"C:\Users\Kruk\source\repos\ZorkBork\ZorkBork\bin\Debug\map.xml";
 
-                Console.Write(kaartItems);
-                Assert.AreEqual(kaartItems.Count, Regex.Matches(writer.ToString(), Environment.NewLine).Count);
+                };
+                Kaart.Instance.Add(new KaartItem());
+                Kaart.Instance.Add(new KaartItem());
+                Kaart.Instance.Add(new KaartItem());
+                Console.Write(Kaart.Instance.ToString());
+                using (var writer = new StringWriter())
+                {
+                    Console.SetOut(writer);
 
+                    Console.Write(Kaart.Instance);
+                    Assert.AreEqual(Kaart.Instance.Count, Regex.Matches(writer.ToString(), Environment.NewLine).Count);
+
+                }
             }
         }
     }
