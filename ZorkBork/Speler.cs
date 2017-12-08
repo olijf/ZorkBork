@@ -40,12 +40,12 @@ namespace ZorkBork
             positie = new Point(0, 0);
         }
 
-        public void verhoogScore(int hoeveelheid)
+        public void VerhoogScore(int hoeveelheid)
         {
             score = score + hoeveelheid;
         }
 
-        public void verlaagScore(int hoeveelheid)
+        public void VerlaagScore(int hoeveelheid)
         {
             int tempScore = score - hoeveelheid;
             if (tempScore >= 0)
@@ -58,7 +58,7 @@ namespace ZorkBork
             }
         }
 
-        public void resetScore()
+        public void ResetScore()
         {
             score = 0;
         }
