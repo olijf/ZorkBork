@@ -13,12 +13,6 @@ namespace ZorkBork
             var speler = new Speler();
             Kaart.Instance.SpeelVeldGrootte = 10;
 
-            var serializer = new XmlSerializer(typeof(ZorkBork.Kaart));
-            using (var streamWriter = new StreamWriter(@"map1.xml"))
-            {
-                serializer.Serialize(streamWriter, Kaart.Instance);
-            }
-
             //Game loop
             var GL = new GameLoop(speler);
 

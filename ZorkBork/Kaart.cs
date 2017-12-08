@@ -97,16 +97,20 @@ namespace ZorkBork
             switch (richting)
             {
                 case Richting.Omhoog:
-                    Positie.y = BoundsCheck(Positie.y + 1) ? Positie.y + 1 : Positie.y;
+                    if (GetCurrentPosition().IsRichtingAllowed(richting))
+                        Positie.y = BoundsCheck(Positie.y + 1) ? Positie.y + 1 : Positie.y;
                     break;
                 case Richting.Omlaag:
-                    Positie.y = BoundsCheck(Positie.y - 1) ? Positie.y - 1 : Positie.y;
+                    if (GetCurrentPosition().IsRichtingAllowed(richting))
+                        Positie.y = BoundsCheck(Positie.y - 1) ? Positie.y - 1 : Positie.y;
                     break;
                 case Richting.Rechts:
-                    Positie.x = BoundsCheck(Positie.x + 1) ? Positie.x + 1 : Positie.x;
+                    if (GetCurrentPosition().IsRichtingAllowed(richting))
+                        Positie.x = BoundsCheck(Positie.x + 1) ? Positie.x + 1 : Positie.x;
                     break;
                 case Richting.Links:
-                    Positie.x = BoundsCheck(Positie.x - 1) ? Positie.x - 1 : Positie.x;
+                    if (GetCurrentPosition().IsRichtingAllowed(richting))
+                        Positie.x = BoundsCheck(Positie.x - 1) ? Positie.x - 1 : Positie.x;
                     break;
             }
         }
@@ -122,7 +126,7 @@ namespace ZorkBork
 
         public KaartItem GetCurrentPosition()
         {
-            return this[Positie.x * SpeelVeldGrootte + Positie.y];
+            return this[Positie.y * SpeelVeldGrootte + Positie.x];
         }
     }
 }

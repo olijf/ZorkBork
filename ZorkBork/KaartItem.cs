@@ -36,6 +36,15 @@ namespace ZorkBork
             
             throw new NotImplementedException();
         }
+        public bool IsRichtingAllowed(Richting richting)
+        {
+            foreach (var item in interactieRichting)
+            {
+                if (richting == item)
+                    return true;
+            }
+            return false;
+        }
         public override string ToString()
         {
             string returnString = String.Format("Je staat in {0} je kan de volgende richting uit: ", Beschrijving);
