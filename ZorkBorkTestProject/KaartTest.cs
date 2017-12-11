@@ -71,10 +71,54 @@ namespace ZorkBorkTestProject
                 };
                 var voorNieuwePositie = Kaart.Instance.Positie;
                 Kaart.Instance.UpdatePositie(Richting.Omhoog);
-                Assert.AreNotEqual(voorNieuwePositie, Kaart.Instance.Positie);
+                Assert.AreNotSame(voorNieuwePositie, Kaart.Instance.Positie);
+            }
+        }
 
+        [TestMethod]
+        public void CheckOmhoog()
+        {
+            using (ShimsContext.Create())
+            {
+                ZorkBork.Fakes.ShimSettings.GetValueString = (_) =>
+                {
+                    return @"..\..\..\MapFinal.xml";
 
+                };
 
+                ZorkBork.Fakes.ShimSettings.GetValueAsIntString = (_) =>
+                {
+                    return 10;
+
+                };
+                var voorOmhoog = Kaart.Instance.Positie;
+                voorOmhoog.y += 1;
+                Kaart.Instance.UpdatePositie(Richting.Omhoog);
+                
+                Assert.IsTrue(voorOmhoog.Equals(Kaart.Instance.Positie));
+            }
+        }
+
+        [TestMethod]
+        public void CheckRechts()
+        {
+            using (ShimsContext.Create())
+            {
+                ZorkBork.Fakes.ShimSettings.GetValueString = (_) =>
+                {
+                    return @"..\..\..\MapFinal.xml";
+
+                };
+
+                ZorkBork.Fakes.ShimSettings.GetValueAsIntString = (_) =>
+                {
+                    return 10;
+
+                };
+                var voorRechts = Kaart.Instance.Positie;
+                Kaart.Instance.UpdatePositie(Richting.Rechts);
+
+                Assert.AreEqual(voorRechts, Kaart.Instance.Positie);
             }
         }
     }
