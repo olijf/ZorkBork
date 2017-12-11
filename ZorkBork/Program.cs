@@ -11,7 +11,6 @@ namespace ZorkBork
         {
             //Initieren speler 
             var speler = new Speler();
-            Kaart.Instance.SpeelVeldGrootte = 10;
 
             //Game loop
             var gameLoop = new GameLoop(speler);
