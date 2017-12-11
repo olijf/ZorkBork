@@ -314,7 +314,9 @@
   </KaartItem>
   <KaartItem>
     <Beschrijving>Discription 60</Beschrijving>
-    <InteractieRichting>Links</InteractieRichting>
+    <InteractieRichting>Omhoog</InteractieRichting>
+    <InteractieRichting>Omlaag</InteractieRichting>
+    <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
     <Beschrijving>Discription 61</Beschrijving>
