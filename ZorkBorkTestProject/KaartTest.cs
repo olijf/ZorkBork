@@ -18,7 +18,7 @@ namespace ZorkBorkTestProject
             {
                 ZorkBork.Fakes.ShimSettings.GetValueString = (_) =>
                 {
-                    return @"C:\Users\Kruk\source\repos\ZorkBork\ZorkBork\bin\Debug\map.xml";
+                    return @"..\..\..\MapFinal.xml";
 
                 };
                 Assert.IsNotNull(Kaart.Instance);
@@ -31,7 +31,7 @@ namespace ZorkBorkTestProject
             {
                 ZorkBork.Fakes.ShimSettings.GetValueString = (_) =>
                 {
-                    return @"C:\Users\Kruk\source\repos\ZorkBork\ZorkBork\bin\Debug\map.xml";
+                    return @"..\..\..\MapFinal.xml";
 
                 };
                 Kaart.Instance.Clear();
@@ -45,7 +45,7 @@ namespace ZorkBorkTestProject
             {
                 ZorkBork.Fakes.ShimSettings.GetValueString = (_) =>
                 {
-                    return @"C:\Users\Kruk\source\repos\ZorkBork\ZorkBork\bin\Debug\map.xml";
+                    return @"..\..\..\MapFinal.xml";
 
                 };
                 using (var writer = new StringWriter())
