@@ -42,40 +42,53 @@
       <FileName>GameLoop.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ZorkBork.Sleutels">
-    <Position X="15.75" Y="4" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Sleutels.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="ZorkBork.Deur">
+  <Class Name="ZorkBork.Vijand">
     <Position X="12" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Deur.cs</FileName>
-      <NewMemberFileName>Sleutels.cs</NewMemberFileName>
+      <FileName>Vijanden.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ZorkBork.Konijn">
-    <Position X="10.25" Y="5.5" Width="1.5" />
+    <Position X="10.25" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Deur.cs</FileName>
+      <FileName>Vijanden.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ZorkBork.Pelikaan">
-    <Position X="13.75" Y="5.5" Width="1.5" />
+    <Position X="13.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Vijanden.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZorkBork.Olifant">
+    <Position X="12" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Vijanden.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZorkBork.Deur">
+    <Position X="13.75" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Deur.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ZorkBork.Olifant">
-    <Position X="12" Y="5.5" Width="1.5" />
+  <Class Name="ZorkBork.Sleutel">
+    <Position X="15.5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Deur.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZorkBork.PickUps">
+    <Position X="16.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PickUps.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="ZorkBork.Richting">

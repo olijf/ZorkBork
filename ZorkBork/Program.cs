@@ -16,7 +16,7 @@ namespace ZorkBork
             //Game loop
             var GL = new GameLoop(speler);
 
-            GL.Start();
+            GL.Run();
         }
     }
 }

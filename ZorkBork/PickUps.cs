@@ -5,11 +5,7 @@ using System.Text;
 
 namespace ZorkBork
 {
-    public class Deur : KaartItem
-    {
-    }
-
-    public class Sleutel : KaartItem
+    public class PickUps
     {
     }
 }

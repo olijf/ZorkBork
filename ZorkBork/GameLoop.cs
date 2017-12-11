@@ -16,15 +16,15 @@ namespace ZorkBork
             _speler = speler;
         }
 
-        public void Start()
+        public void Run()
         {
-            for (; ; )
+            // https://stackoverflow.com/a/2611529
+            while(true)
             {
                 Console.WriteLine(Kaart.Instance.GetCurrentPosition());
                 var interactieKey = Console.ReadKey().Key;
                 if (interactieKey == ConsoleKey.Delete)
                 {
-                    //Exit game
                     Environment.Exit(0);
 
                 }

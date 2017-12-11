@@ -5,9 +5,6 @@ using System.Text;
 
 namespace ZorkBork
 {
-    public class Sleutels : KaartItem
-    {
-    }
 
     public class Vijand : KaartItem
     {
@@ -15,5 +12,17 @@ namespace ZorkBork
         {
             throw new System.NotImplementedException();
         }
+    }
+
+    public class Konijn : Vijand
+    {
+    }
+
+    public class Olifant : Vijand
+    {
+    }
+
+    public class Pelikaan : Vijand
+    {
     }
 }
