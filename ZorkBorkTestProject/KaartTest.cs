@@ -58,5 +58,24 @@ namespace ZorkBorkTestProject
                 }
             }
         }
+
+        [TestMethod]
+        public void IsPositieVeranderd()
+        {
+            using (ShimsContext.Create())
+            {
+                ZorkBork.Fakes.ShimSettings.GetValueString = (_) =>
+                {
+                    return @"..\..\..\MapFinal.xml";
+
+                };
+                var voorNieuwePositie = Kaart.Instance.Positie;
+                Kaart.Instance.UpdatePositie(Richting.Omhoog);
+                Assert.AreNotEqual(voorNieuwePositie, Kaart.Instance.Positie);
+
+
+
+            }
+        }
     }
 }
