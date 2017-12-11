@@ -52,38 +52,9 @@ namespace ZorkBork
             }
 
         }
+        
+
         */
-
-        public string AsDrawing()
-        {
-            var desc = String.Empty;
-            for (int i = 0; i < Count; i++)
-            {
-                desc += String.Format("{0}{1}", InteractieRichtingSymbool(this[i].InteractieRichting), "\t");
-                if (i % SpeelVeldGrootte == 0)
-                    desc += Environment.NewLine;
-            }
-            return desc;
-
-        }
-
-        private string InteractieRichtingSymbool(List<Richting> interactieRichting)
-        {
-            switch (interactieRichting[0])
-            {
-                case Richting.Omhoog:
-                    return "▲";
-                case Richting.Omlaag:
-                    return "▼";
-                case Richting.Rechts:
-                    return "►";
-                case Richting.Links:
-                    return "◄";
-                default:
-                    return " ";
-            }
-        }
-
         public override string ToString()
         {
             var desc = String.Empty;

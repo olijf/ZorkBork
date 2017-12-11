@@ -16,23 +16,20 @@ namespace ZorkBork
             _speler = speler;
         }
 
-        public void Run()
+        public void VolgendeStap()
         {
             // https://stackoverflow.com/a/2611529
-            while(true)
+            Console.WriteLine(Kaart.Instance.GetCurrentPosition());
+            var interactieKey = Console.ReadKey().Key;
+            if (interactieKey == ConsoleKey.Delete)
             {
-                Console.WriteLine(Kaart.Instance.GetCurrentPosition());
-                var interactieKey = Console.ReadKey().Key;
-                if (interactieKey == ConsoleKey.Delete)
-                {
-                    Environment.Exit(0);
-
-                }
-                else
-                {
-                    Kaart.Instance.UpdatePositie((Richting)interactieKey);
-                }
+                Environment.Exit(0);
             }
+            else
+            {
+                Kaart.Instance.UpdatePositie((Richting)interactieKey);
+            }
+            VolgendeStap();
         }
     }
 }

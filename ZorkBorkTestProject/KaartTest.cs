@@ -25,20 +25,6 @@ namespace ZorkBorkTestProject
             }
         }
         [TestMethod]
-        public void AddKaartItemsToCollection()
-        {
-            using (ShimsContext.Create())
-            {
-                ZorkBork.Fakes.ShimSettings.GetValueString = (_) =>
-            {
-                return @"C:\Users\Kruk\source\repos\ZorkBork\ZorkBork\bin\Debug\map.xml";
-
-            };
-                Kaart.Instance.Add(new KaartItem());
-                Assert.AreEqual(101, Kaart.Instance.Count);
-            }
-        }
-        [TestMethod]
         public void RemoveKaartItemsFromCollection()
         {
             using (ShimsContext.Create())
@@ -48,23 +34,8 @@ namespace ZorkBorkTestProject
                     return @"C:\Users\Kruk\source\repos\ZorkBork\ZorkBork\bin\Debug\map.xml";
 
                 };
-                var kaartItem = new KaartItem();
                 Kaart.Instance.Clear();
                 Assert.AreEqual(0, Kaart.Instance.Count);
-            }
-        }
-        [TestMethod]
-        public void VulKaartMetitems()
-        {
-            using (ShimsContext.Create())
-            {
-                ZorkBork.Fakes.ShimSettings.GetValueString = (_) =>
-                {
-                    return @"C:\Users\Kruk\source\repos\ZorkBork\ZorkBork\bin\Debug\map.xml";
-
-                };
-                Kaart.Instance.MaakNieuweKaart();
-                Assert.AreEqual(1, Kaart.Instance.Count);
             }
         }
         [TestMethod]
@@ -77,10 +48,6 @@ namespace ZorkBorkTestProject
                     return @"C:\Users\Kruk\source\repos\ZorkBork\ZorkBork\bin\Debug\map.xml";
 
                 };
-                Kaart.Instance.Add(new KaartItem());
-                Kaart.Instance.Add(new KaartItem());
-                Kaart.Instance.Add(new KaartItem());
-                Console.Write(Kaart.Instance.ToString());
                 using (var writer = new StringWriter())
                 {
                     Console.SetOut(writer);

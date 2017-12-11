@@ -10,6 +10,35 @@ namespace MapCreatorTool
 {
     class Program
     {
+        public static string AsDrawing()
+        {
+            var desc = String.Empty;
+            for (int i = 0; i < ZorkBork.Kaart.Instance.Count; i++)
+            {
+                //todo fix uitprint dingus
+                //desc += String.Format("{0}{1}", InteractieRichtingSymbool(ZorkBork.Kaart.Instance[i].InteractieRichting.[0]), "\t");
+                if (i % ZorkBork.Kaart.Instance.SpeelVeldGrootte == 0)
+                    desc += Environment.NewLine;
+            }
+            return desc;
+
+        }
+        private string InteractieRichtingSymbool(List<ZorkBork.Richting> interactieRichting)
+        {
+            switch (interactieRichting[0])
+            {
+                case ZorkBork.Richting.Omhoog:
+                    return "▲";
+                case ZorkBork.Richting.Omlaag:
+                    return "▼";
+                case ZorkBork.Richting.Rechts:
+                    return "►";
+                case ZorkBork.Richting.Links:
+                    return "◄";
+                default:
+                    return " ";
+            }
+        }
         static void Main(string[] args)
         {
             var serializer = new XmlSerializer(typeof(ZorkBork.Kaart));
@@ -26,7 +55,7 @@ namespace MapCreatorTool
             kaartItemsCollection.Add(kaartItem);
             for (; ; )
             {
-                Console.WriteLine(kaartItemsCollection.AsDrawing());
+                Console.WriteLine(AsDrawing());
                 var interactieKey = Console.ReadKey().Key;
                 switch (interactieKey)
                 {
@@ -69,5 +98,7 @@ namespace MapCreatorTool
 
             kaartItemsCollection.Add(kaartItem1);
         }
+
+
     }
 }
