@@ -26,6 +26,7 @@ namespace ZorkBork
                     using (var streamReader = new StreamReader(Settings.GetValue("kaartBestand")))
                     {
                         instance = (Kaart)serializer.Deserialize(streamReader);
+                        instance.SpeelVeldGrootte = Settings.GetValueAsInt("speelVeldGrootte");
                     };
                 }
                 return instance;
