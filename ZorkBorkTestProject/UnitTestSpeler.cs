@@ -43,6 +43,7 @@ namespace ZorkBorkTestProject
         {
             var speler = new Speler();
             speler.VerlaagScore(50);
+            speler.VerlaagScore(100);
             Assert.AreEqual(0, speler.Score);
         }
 

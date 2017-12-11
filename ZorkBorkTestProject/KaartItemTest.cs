@@ -7,26 +7,28 @@ namespace ZorkBorkTestProject
     public class KaartItemTest
     {
         [TestMethod]
-        public void CreateKaartItemBaseClassTest()
+        public void CreateKaartItemTest()
         {
-            var kaartItemBaseClass = new KaartItem();
-            Assert.IsNotNull(kaartItemBaseClass);
+            var kaartItem = new KaartItem();
+            Assert.IsNotNull(kaartItem);
         }
 
         [TestMethod]
-        public void AddDiscriptionKaartItemBaseClassTest()
+        public void AddDiscriptionKaartItemTest()
         {
-            var kaartItemBaseClass = new KaartItem();
-            kaartItemBaseClass.Beschrijving = "test beschrijving";
-            Assert.AreEqual("test beschrijving", kaartItemBaseClass.Beschrijving);
+            var kaartItem = new KaartItem
+            {
+                Beschrijving = "test beschrijving"
+            };
+            Assert.AreEqual("test beschrijving", kaartItem.Beschrijving);
         }
 
         [TestMethod]
-        public void InteractWithKaartItemBaseClass()
+        public void InteractWithKaartClass()
         {
-            var kaartItemBaseClass = new KaartItem();
-            kaartItemBaseClass.Interact();
-            Assert.IsTrue(kaartItemBaseClass.InteractionHasHappened());
+            var kaartItem = new KaartItem();
+            kaartItem.Interact();
+            Assert.IsTrue(kaartItem.InteractionHasHappened());
         }
     }
 }

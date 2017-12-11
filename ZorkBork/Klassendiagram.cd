@@ -1,37 +1,100 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="ZorkBork.KaartItem">
-    <Position X="1" Y="0.5" Width="1.75" />
+    <Position X="12.75" Y="0.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAQAQAAAIAAEAAAAAQAAAAEAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAQAQAAAIAAEAAgAAQAAAAEAAAA=</HashCode>
       <FileName>KaartItem.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ZorkBork.Kaart">
-    <Position X="3.25" Y="0.5" Width="1.75" />
+    <Position X="8.75" Y="0.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAIACAAggQAEAEAAAAAAAAAABAAAAAQAAAAAAAAAA=</HashCode>
       <FileName>Kaart.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ZorkBork.Program">
-    <Position X="3.25" Y="2.5" Width="1.75" />
+    <Position X="5" Y="0.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Speler">
-    <Position X="5.25" Y="1.5" Width="1.75" />
+  <Class Name="ZorkBork.Speler" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAACAAAAAAAAgCAAAIAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAIgAAgAAAAIAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>Speler.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Enum Name="ZorkBork.Richting">
-    <Position X="7.5" Y="0.5" Width="1.5" />
+  <Class Name="ZorkBork.Settings" Collapsed="true">
+    <Position X="5.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAABACAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAE=</HashCode>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZorkBork.GameLoop" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>GameLoop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZorkBork.Vijand">
+    <Position X="12" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Vijanden.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZorkBork.Konijn">
+    <Position X="10.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Vijanden.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZorkBork.Pelikaan">
+    <Position X="13.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Vijanden.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZorkBork.Olifant">
+    <Position X="12" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Vijanden.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZorkBork.Deur">
+    <Position X="13.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Deur.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZorkBork.Sleutel">
+    <Position X="15.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Deur.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZorkBork.PickUps">
+    <Position X="16.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PickUps.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ZorkBork.Richting">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABACAAAAAAAAAAAAAAAAAAAAAACAAEAAAAAAE=</HashCode>
       <FileName>Richting.cs</FileName>
     </TypeIdentifier>
   </Enum>

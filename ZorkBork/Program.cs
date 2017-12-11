@@ -14,9 +14,9 @@ namespace ZorkBork
             Kaart.Instance.SpeelVeldGrootte = 10;
 
             //Game loop
-            var GL = new GameLoop(speler);
+            var gameLoop = new GameLoop(speler);
 
-            GL.Start();
+            gameLoop.VolgendeStap();
         }
     }
 }
