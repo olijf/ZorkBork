@@ -71,30 +71,26 @@ namespace ZorkBork
             switch (richting)
             {
                 case Richting.Omhoog:
-                    if (GetCurrentPosition().IsRichtingAllowed(richting))
-                        Positie.y = BoundsCheck(Positie.y + 1) ? Positie.y + 1 : Positie.y;
-                    else
-                        Console.WriteLine("Dat kan niet!");
+                    Positie.y = RichtingOK(richting, Positie.y + 1) ? Positie.y + 1 : Positie.y;
                     break;
                 case Richting.Omlaag:
-                    if (GetCurrentPosition().IsRichtingAllowed(richting))
-                        Positie.y = BoundsCheck(Positie.y - 1) ? Positie.y - 1 : Positie.y;
-                    else
-                        Console.WriteLine("Dat kan niet!");
+                    Positie.y = RichtingOK(richting, Positie.y - 1) ? Positie.y - 1 : Positie.y;
                     break;
                 case Richting.Rechts:
-                    if (GetCurrentPosition().IsRichtingAllowed(richting))
-                        Positie.x = BoundsCheck(Positie.x + 1) ? Positie.x + 1 : Positie.x;
-                    else
-                        Console.WriteLine("Dat kan niet!");
+                    Positie.x = RichtingOK(richting, Positie.x + 1) ? Positie.x + 1 : Positie.x;
                     break;
                 case Richting.Links:
-                    if (GetCurrentPosition().IsRichtingAllowed(richting))
-                        Positie.x = BoundsCheck(Positie.x - 1) ? Positie.x - 1 : Positie.x;
-                    else
-                        Console.WriteLine("Dat kan niet!");
+                    Positie.x = RichtingOK(richting, Positie.x - 1) ? Positie.x - 1 : Positie.x;
                     break;
             }
+        }
+
+        private bool RichtingOK(Richting richting, int bound)
+        {
+            var r = GetCurrentPosition().IsRichtingAllowed(richting);
+            if(!r)
+            Console.WriteLine("dat kan niet!");
+            return r && BoundsCheck(bound);
         }
 
         private bool BoundsCheck(int nieuweWaarde)
