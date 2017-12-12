@@ -1,22 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace ZorkBork
+﻿namespace ZorkBork
 {
     public class Speler
     {
-
-        private static Speler _instance;
-        public static Speler Instance
-        {
-            get
-            {
-                if (_instance == null)
-                {
-                    _instance = new Speler();
-                }
-                return _instance;
-            }
-        }
 
         private int _score;
 
@@ -41,9 +26,8 @@ namespace ZorkBork
             get { return _sleutels; }
             set { _sleutels = value; }
         }
-
-
-        private Speler()
+        
+        public Speler()
         {
             _health = 100;
             _score = 0;
