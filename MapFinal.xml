@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Kaart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <KaartItem>
-    <Beschrijving>Discription 0</Beschrijving>
+  <Sleutel>
+    <Beschrijving>sleuteldestleut</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
-  </KaartItem>
+  </Sleutel>
   <KaartItem>
     <Beschrijving>Discription 1</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>

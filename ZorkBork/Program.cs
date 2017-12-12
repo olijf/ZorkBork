@@ -9,13 +9,7 @@ namespace ZorkBork
     {
         static void Main(string[] args)
         {
-            //Initieren speler 
-            var speler = new Speler();
-
-            //Game loop
-            var gameLoop = new GameLoop(speler);
-
-            gameLoop.VolgendeStap();
+            GameLoop.Instance.VolgendeStap();
         }
     }
 }

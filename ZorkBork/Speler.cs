@@ -6,17 +6,29 @@ namespace ZorkBork
     public class Speler
     {
 
+        private static Speler instance;
+        public static Speler Instance
+        {
+            get
+            {
+                if (instance != null)
+                {
+                    instance = new Speler();
+                }
+                return instance;
+            }
+        }
+        private Speler()
+        {
+
+            score = 0;
+        }
         private int score;
 
         public int Score
         {
             get { return score; }
             set { score = value; }
-        }
-        
-        public Speler()
-        {
-            score = 0;
         }
 
         public void VerhoogScore(int hoeveelheid)

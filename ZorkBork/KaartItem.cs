@@ -5,11 +5,11 @@ using System.Xml.Serialization;
 namespace ZorkBork
 {
     [XmlType]
-    public class KaartItem
+    public class KaartItem 
     {
 
         private string beschrijving;
-        
+
         [XmlElement]
         public string Beschrijving
         {
@@ -25,15 +25,9 @@ namespace ZorkBork
             set { interactieRichting = value; }
         }
 
-
-        public void Interact()
-        {
-            throw new NotImplementedException();
-        }
-
         public bool InteractionHasHappened()
         {
-            
+
             throw new NotImplementedException();
         }
         public bool IsRichtingAllowed(Richting richting)
@@ -50,9 +44,14 @@ namespace ZorkBork
             string returnString = String.Format("Je staat in {0} je kan de volgende richting uit: ", Beschrijving);
             foreach (var item in InteractieRichting)
             {
-                returnString += String.Format("{0} ",item);
+                returnString += String.Format("{0} ", item);
             }
             return returnString;
         }
+
+        public void Interact()
+        {
+            throw new NotImplementedException();
+        }
     }
-}
+    }

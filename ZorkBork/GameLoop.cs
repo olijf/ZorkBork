@@ -9,13 +9,19 @@ namespace ZorkBork
 
     class GameLoop
     {
-        private Speler _speler;
-
-        public GameLoop(Speler speler)
+        private static GameLoop instance;
+        public static GameLoop Instance
         {
-            _speler = speler;
+            get
+            {
+                if (instance != null)
+                {
+                    instance = new GameLoop();
+                }
+                return instance;
+            }
         }
-
+        private GameLoop() { }
         public void VolgendeStap()
         {
             // https://stackoverflow.com/a/2611529
@@ -24,6 +30,10 @@ namespace ZorkBork
             if (interactieKey == ConsoleKey.Delete)
             {
                 Environment.Exit(0);
+            }
+            else if (interactieKey == ConsoleKey.E)
+            {
+                Kaart.Instance.GetCurrentPosition().Interact();
             }
             else
             {
