@@ -37,7 +37,7 @@ namespace ZorkBork
                 var interactable = Kaart.Instance.GetCurrentPosition().GetInteractable();
                 if (interactable != null)
                 {
-                    interactable.interact(_speler);
+                    interactable.Interact(_speler);
                 }
                 else { 
                     Console.WriteLine("E is hier geen geldige keuze");
