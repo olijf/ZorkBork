@@ -1,25 +1,23 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.IO;
 using System.Xml.Serialization;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ZorkBork
 {
 
     class GameLoop
     {
-        private static GameLoop instance;
-        public static GameLoop Instance
+        private Speler _speler;
+
+        public GameLoop(Speler speler)
         {
-            get
-            {
-                if (instance == null)
-                {
-                    instance = new GameLoop();
-                }
-                return instance;
-            }
+            _speler = speler;
         }
-        private GameLoop() { }
+
         public void VolgendeStap()
         {
             // https://stackoverflow.com/a/2611529

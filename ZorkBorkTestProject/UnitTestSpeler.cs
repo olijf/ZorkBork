@@ -10,21 +10,21 @@ namespace ZorkBorkTestProject
         [TestMethod]
         public void SpelerClassExists()
         {
-            var speler = Speler.Instance;
+            var speler = new Speler();
             Assert.IsNotNull(speler);
         }
 
         [TestMethod]
         public void PlayerScoreIsZero()
         {
-            var speler = Speler.Instance;
+            var speler = new Speler();
             Assert.AreEqual(0, speler.Score);
         }
 
         [TestMethod]
         public void VerhoogScore()
         {
-            var speler = Speler.Instance;
+            var speler = new Speler();
             speler.VerhoogScore(100);
             Assert.AreEqual(100, speler.Score);
         }
@@ -32,16 +32,16 @@ namespace ZorkBorkTestProject
         [TestMethod]
         public void VerlaagScorePositief()
         {
-            var speler = Speler.Instance;
+            var speler = new Speler();
             speler.VerhoogScore(100);
             speler.VerlaagScore(50);
-            Assert.AreEqual(150, speler.Score);
+            Assert.AreEqual(50, speler.Score);
         }
 
         [TestMethod]
         public void VerlaagScoreKanNietNegatief()
         {
-            var speler = Speler.Instance;
+            var speler = new Speler();
             speler.VerlaagScore(50);
             speler.VerlaagScore(100);
             Assert.AreEqual(0, speler.Score);
@@ -50,7 +50,7 @@ namespace ZorkBorkTestProject
         [TestMethod]
         public void ResetScore()
         {
-            var speler = Speler.Instance;
+            var speler = new Speler();
             speler.VerhoogScore(50);
             speler.ResetScore();
             Assert.AreEqual(0, speler.Score);
