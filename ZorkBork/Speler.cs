@@ -1,54 +1,93 @@
-﻿namespace ZorkBork
+﻿using System.Collections.Generic;
+
+namespace ZorkBork
 {
     public class Speler
     {
 
-        private static Speler instance;
+        private static Speler _instance;
         public static Speler Instance
         {
             get
             {
-                if (instance == null)
+                if (_instance == null)
                 {
-                    instance = new Speler();
+                    _instance = new Speler();
                 }
-                return instance;
+                return _instance;
             }
         }
-        private Speler()
-        {
 
-            score = 0;
-        }
-        private int score;
+        private int _score;
 
         public int Score
         {
-            get { return score; }
-            set { score = value; }
+            get { return _score; }
+            set { _score = value; }
         }
 
-        public void VerhoogScore(int hoeveelheid)
+        private int _health;
+
+        public int Health
         {
-            score = score + hoeveelheid;
+            get { return _health; }
+            set { _health = value; }
         }
 
-        public void VerlaagScore(int hoeveelheid)
+        private List<string> _sleutels;
+
+        public List<string> Sleutels
         {
-            int tempScore = score - hoeveelheid;
-            if (tempScore >= 0)
+            get { return _sleutels; }
+            set { _sleutels = value; }
+        }
+
+
+        private Speler()
+        {
+            _health = 100;
+            _score = 0;
+            _sleutels = new List<string>();
+        }
+
+        public void VerhoogOfVerlaagScore(int hoeveelheid)
+        {
+            int nieuweScore = _score + hoeveelheid;
+            if(nieuweScore < 0)
             {
-                score = tempScore;
-            }
-            else
+                _score = 0;
+            } else
             {
-                score = 0;
+                _score = nieuweScore;
             }
         }
 
-        public void ResetScore()
+        public void VerhoogOfVerlaagHealth(int hoeveelheid)
         {
-            score = 0;
+            int nieuweHealth = _health + hoeveelheid;
+            if(nieuweHealth < 0)
+            {
+                _health = 0;
+            } else if(nieuweHealth > 100)
+            {
+                _health = 100;
+            } else
+            {
+                _health = nieuweHealth;
+            }
         }
+
+        public void VoegSleutelToe(string sleutel)
+        {
+            _sleutels.Add(sleutel);
+        }
+
+        public void ResetSpeler()
+        {
+            _score = 0;
+            _health = 100;
+            _sleutels.Clear();
+        }
+
     }
 }
