@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Xml.Serialization;
@@ -6,15 +7,34 @@ using System.Xml.Serialization;
 namespace ZorkBork
 {
     [XmlType]
-    public class Kaart : List<KaartItem>
+    public class Kaart
     {
+        [XmlElement("KaartItem")]
+        public List<KaartItem> List = new List<KaartItem>();
+
         private static Kaart instance;
-        [XmlAttribute("Positie")]
+
+        [XmlElement]
         public Positie Positie = new Positie { x = 0, y = 0 };
 
         private Kaart()
         {
-
+            SpeelVeldGrootte = Settings.GetValueAsInt("speelVeldGrootte");
+            /*
+            var Rand = new Random();
+            for (int i = 0; i < SpeelVeldGrootte * SpeelVeldGrootte; i++)
+            {
+                var nieuwKaartItem = new KaartItem();
+                nieuwKaartItem.Beschrijving = string.Format("Discription {0}", i);
+                var nieuwRichting = new List<Richting>();
+                nieuwRichting.Add(Richting.Omhoog);
+                nieuwRichting.Add(Richting.Omlaag);
+                nieuwRichting.Add(Richting.Links);
+                nieuwRichting.Add(Richting.Rechts);
+                nieuwKaartItem.InteractieRichting = nieuwRichting;
+                List.Add(nieuwKaartItem);
+            }
+            */
         }
         public static Kaart Instance
         {
@@ -32,34 +52,14 @@ namespace ZorkBork
                 return instance;
             }
         }
-        [XmlAttribute("SpeelVeldGrootte")]
-        public int SpeelVeldGrootte { get; set; }
+        [XmlElement]
+        public int SpeelVeldGrootte;
 
-        /*
-        public void MaakNieuweKaart()
-        {
-            var Rand = new Random();
-            for (int i = 0; i < SpeelVeldGrootte * SpeelVeldGrootte; i++)
-            {
-                var nieuwKaartItem = new KaartItem();
-                nieuwKaartItem.Beschrijving = string.Format("Discription {0}", i);
-                var nieuwRichting = new List<Richting>();
-                nieuwRichting.Add(Richting.Omhoog);
-                nieuwRichting.Add(Richting.Omlaag);
-                nieuwRichting.Add(Richting.Links);
-                nieuwRichting.Add(Richting.Rechts);
-                nieuwKaartItem.InteractieRichting = nieuwRichting;
-                Add(nieuwKaartItem);
-            }
 
-        }
-        
-
-        */
         public override string ToString()
         {
             var desc = String.Empty;
-            foreach (var item in this)
+            foreach (var item in List)
             {
                 desc += String.Format("{0} {1}", item, Environment.NewLine);
             }
@@ -88,8 +88,8 @@ namespace ZorkBork
         private bool RichtingOK(Richting richting, int bound)
         {
             var r = GetCurrentPosition().IsRichtingAllowed(richting);
-            if(!r)
-            Console.WriteLine("dat kan niet!");
+            if (!r)
+                Console.WriteLine("dat kan niet!");
             return r && BoundsCheck(bound);
         }
 
@@ -104,7 +104,7 @@ namespace ZorkBork
 
         public KaartItem GetCurrentPosition()
         {
-            return this[Positie.y * SpeelVeldGrootte + Positie.x];
+            return List[Positie.y * SpeelVeldGrootte + Positie.x];
         }
     }
 }

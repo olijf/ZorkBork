@@ -13,7 +13,7 @@ namespace MapCreatorTool
         public static string AsDrawing()
         {
             var desc = String.Empty;
-            for (int i = 0; i < ZorkBork.Kaart.Instance.Count; i++)
+            for (int i = 0; i < ZorkBork.Kaart.Instance.List.Count; i++)
             {
                 //todo fix uitprint dingus
                 //desc += String.Format("{0}{1}", InteractieRichtingSymbool(ZorkBork.Kaart.Instance[i].InteractieRichting.[0]), "\t");
@@ -52,7 +52,7 @@ namespace MapCreatorTool
                 InteractieRichting = kaartItemRichting
             };
 
-            kaartItemsCollection.Add(kaartItem);
+            kaartItemsCollection.List.Add(kaartItem);
             for (; ; )
             {
                 Console.WriteLine(AsDrawing());
@@ -96,7 +96,7 @@ namespace MapCreatorTool
                 InteractieRichting = kaartItemRichting1
             };
 
-            kaartItemsCollection.Add(kaartItem1);
+            kaartItemsCollection.List.Add(kaartItem1);
         }
 
 

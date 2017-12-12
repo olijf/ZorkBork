@@ -35,7 +35,7 @@ namespace ZorkBorkTestProject
             var speler = Speler.Instance;
             speler.VerhoogScore(100);
             speler.VerlaagScore(50);
-            Assert.AreEqual(50, speler.Score);
+            Assert.AreEqual(150, speler.Score);
         }
 
         [TestMethod]
