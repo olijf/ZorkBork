@@ -1,4 +1,6 @@
-﻿namespace ZorkBork
+﻿using System.Collections.Generic;
+
+namespace ZorkBork
 {
     public class Speler
     {

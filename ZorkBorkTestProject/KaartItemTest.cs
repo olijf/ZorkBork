@@ -35,7 +35,7 @@ namespace ZorkBorkTestProject
         {
             var kaartItem = new KaartItem();
             kaartItem.Beschrijving = "TestBoodschap";
-            var interactable = new Interactable()
+            var interactable = new Interactable();
             kaartItem.interacties.Add(interactable);
             Assert.AreEqual(interactable,kaartItem.GetInteractable());
         }

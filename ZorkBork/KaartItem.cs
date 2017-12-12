@@ -25,7 +25,7 @@ namespace ZorkBork
             set { interactieRichting = value; }
         }
         [XmlElement]
-        public List<Interactable> interacties;
+        public List<IInteractable> interacties;
 
         public bool IsRichtingAllowed(Richting richting)
         {
@@ -54,7 +54,7 @@ namespace ZorkBork
             return returnString;
         }
 
-        public Interactable GetInteractable()
+        public IInteractable GetInteractable()
         {
             return interacties.Pop();
         }
