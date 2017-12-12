@@ -50,7 +50,7 @@ namespace ZorkBorkTestProject
                     Console.SetOut(writer);
 
                     Console.Write(Kaart.Instance);
-                    Assert.AreEqual(Kaart.Instance.List.Count, Regex.Matches(writer.ToString(), Environment.NewLine).Count);
+                    Assert.AreEqual(Kaart.Instance.KaartItemList.Count, Regex.Matches(writer.ToString(), Environment.NewLine).Count);
 
                 }
             }
@@ -102,7 +102,7 @@ namespace ZorkBorkTestProject
         }
 
         [TestMethod]
-        public void CheckRechts()
+        public void CheckUpdatePositieFailed()
         {
             using (ShimsContext.Create())
             {
@@ -117,10 +117,10 @@ namespace ZorkBorkTestProject
                     return 10;
 
                 };
-                var voorRechts = Kaart.Instance.Positie;
-                Kaart.Instance.UpdatePositie(Richting.Rechts);
+                var voorLinks = Kaart.Instance.Positie;
+                Kaart.Instance.UpdatePositie(Richting.Links);
 
-                Assert.AreEqual(voorRechts, Kaart.Instance.Positie);
+                Assert.AreEqual(voorLinks, Kaart.Instance.Positie);
             }
         }
         [Ignore]
@@ -138,8 +138,8 @@ namespace ZorkBorkTestProject
                     return 10;
 
                 };
-                Kaart.Instance.List.Clear();
-                Assert.AreEqual(0, Kaart.Instance.List.Count);
+                Kaart.Instance.KaartItemList.Clear();
+                Assert.AreEqual(0, Kaart.Instance.KaartItemList.Count);
             }
         }
     }

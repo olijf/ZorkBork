@@ -13,7 +13,7 @@ namespace MapCreatorTool
         public static string AsDrawing()
         {
             var desc = String.Empty;
-            for (int i = 0; i < ZorkBork.Kaart.Instance.List.Count; i++)
+            for (int i = 0; i < ZorkBork.Kaart.Instance.KaartItemList.Count; i++)
             {
                 //todo fix uitprint dingus
                 //desc += String.Format("{0}{1}", InteractieRichtingSymbool(ZorkBork.Kaart.Instance[i].InteractieRichting.[0]), "\t");
@@ -52,7 +52,7 @@ namespace MapCreatorTool
                 InteractieRichting = kaartItemRichting
             };
 
-            kaartItemsCollection.List.Add(kaartItem);
+            kaartItemsCollection.KaartItemList.Add(kaartItem);
             for (; ; )
             {
                 Console.WriteLine(AsDrawing());
@@ -88,15 +88,15 @@ namespace MapCreatorTool
 
         private static void AddNewKaartItem(ZorkBork.Kaart kaartItemsCollection, ZorkBork.Richting Richting)
         {
-            var kaartItemRichting1 = new List<ZorkBork.Richting>();
-            kaartItemRichting1.Add(Richting);
+            var kaartItemRichting = new List<ZorkBork.Richting>();
+            kaartItemRichting.Add(Richting);
             var kaartItem1 = new ZorkBork.KaartItem()
             {
                 Beschrijving = String.Empty,
-                InteractieRichting = kaartItemRichting1
+                InteractieRichting = kaartItemRichting
             };
 
-            kaartItemsCollection.List.Add(kaartItem1);
+            kaartItemsCollection.KaartItemList.Add(kaartItem1);
         }
 
 

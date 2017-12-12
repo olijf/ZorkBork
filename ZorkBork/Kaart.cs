@@ -9,13 +9,16 @@ namespace ZorkBork
     [XmlType]
     public class Kaart
     {
-        [XmlElement("KaartItem")]
-        public List<KaartItem> List = new List<KaartItem>();
-
         private static Kaart instance;
 
         [XmlElement]
         public Positie Positie = new Positie { x = 0, y = 0 };
+
+        [XmlElement]
+        public int SpeelVeldGrootte;
+
+        [XmlElement("KaartItem")]
+        public List<KaartItem> KaartItemList = new List<KaartItem>();
 
         private Kaart()
         {
@@ -52,14 +55,11 @@ namespace ZorkBork
                 return instance;
             }
         }
-        [XmlElement]
-        public int SpeelVeldGrootte;
-
 
         public override string ToString()
         {
             var desc = String.Empty;
-            foreach (var item in List)
+            foreach (var item in KaartItemList)
             {
                 desc += String.Format("{0} {1}", item, Environment.NewLine);
             }
@@ -104,7 +104,7 @@ namespace ZorkBork
 
         public KaartItem GetCurrentPosition()
         {
-            return List[Positie.y * SpeelVeldGrootte + Positie.x];
+            return KaartItemList[Positie.y * SpeelVeldGrootte + Positie.x];
         }
     }
 }
