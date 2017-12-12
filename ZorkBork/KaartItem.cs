@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
-
+using ZorkBork.Extensions;
 namespace ZorkBork
 {
     [XmlType]
-    public class KaartItem 
+    public class KaartItem
     {
 
         private string beschrijving;
@@ -24,12 +24,9 @@ namespace ZorkBork
             get { return interactieRichting; }
             set { interactieRichting = value; }
         }
+        [XmlElement]
+        public List<Interactable> interacties;
 
-        public bool InteractionHasHappened()
-        {
-
-            throw new NotImplementedException();
-        }
         public bool IsRichtingAllowed(Richting richting)
         {
             foreach (var item in interactieRichting)
@@ -46,12 +43,20 @@ namespace ZorkBork
             {
                 returnString += String.Format("{0} ", item);
             }
+            if (interacties.Count > 0)
+            {
+                returnString += String.Format("{0}daarnaast kan je ", Environment.NewLine);
+                foreach (var item in interacties)
+                {
+                    returnString += String.Format("{0} ", item);
+                }
+            }
             return returnString;
         }
 
-        public void Interact()
+        public Interactable GetInteractable()
         {
-            throw new NotImplementedException();
+            return interacties.Pop();
         }
     }
-    }
+}

@@ -24,11 +24,20 @@ namespace ZorkBorkTestProject
         }
 
         [TestMethod]
-        public void InteractWithKaartClass()
+        public void GetNullInteractableFromKaartItem()
+        {
+            var interactable = new KaartItem().GetInteractable();
+            Assert.IsNull(interactable);
+        }
+
+        [TestMethod]
+        public void GetInteractableFromKaartItem()
         {
             var kaartItem = new KaartItem();
-            kaartItem.Interact();
-            Assert.IsTrue(kaartItem.InteractionHasHappened());
+            kaartItem.Beschrijving = "TestBoodschap";
+            var interactable = new Interactable()
+            kaartItem.interacties.Add(interactable);
+            Assert.AreEqual(interactable,kaartItem.GetInteractable());
         }
     }
 }

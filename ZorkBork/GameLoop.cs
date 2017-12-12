@@ -34,7 +34,14 @@ namespace ZorkBork
             }
             else if (interactieKey == ConsoleKey.E)
             {
-                Kaart.Instance.GetCurrentPosition().Interact();
+                var interactable = Kaart.Instance.GetCurrentPosition().GetInteractable();
+                if (interactable != null)
+                {
+                    interactable.interact(_speler);
+                }
+                else { 
+                    Console.WriteLine("E is hier geen geldige keuze");
+                }
             }
             else
             {
