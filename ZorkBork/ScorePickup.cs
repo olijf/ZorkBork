@@ -9,7 +9,7 @@ namespace ZorkBork
     class ScorePickup : IInteractable
     {
 
-        public void Interact(Speler speler)
+        public override void Interact(Speler speler)
         {
             speler.VerhoogOfVerlaagScore(100);
         }

@@ -9,7 +9,7 @@ namespace ZorkBork
     class Sleutel : IInteractable
     {
 
-        public void Interact(Speler speler)
+        public override void Interact(Speler speler)
         {
             speler.VoegSleutelToe("De sleutel");
         }

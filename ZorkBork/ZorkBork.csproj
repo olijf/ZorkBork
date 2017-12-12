@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Doel.cs" />
     <Compile Include="Extensions\ListExtensions.cs" />
     <Compile Include="IInteractable.cs" />
     <Compile Include="GameLoop.cs" />

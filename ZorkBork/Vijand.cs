@@ -8,7 +8,7 @@ namespace ZorkBork
 {
     class Vijand : IInteractable
     {
-        public void Interact(Speler speler)
+        public override void Interact(Speler speler)
         {
             Random random = new Random();
             int randomNumber = random.Next(0, 10);
