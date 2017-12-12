@@ -31,48 +31,48 @@ namespace ZorkBork
         
         public Speler()
         {
-            _health = 100;
-            _score = 0;
-            _sleutels = new List<string>();
+            Health = 100;
+            Score = 0;
+            Sleutels = new List<string>();
         }
 
         public void VerhoogOfVerlaagScore(int hoeveelheid)
         {
-            int nieuweScore = _score + hoeveelheid;
+            int nieuweScore = Score + hoeveelheid;
             if(nieuweScore < 0)
             {
-                _score = 0;
+                Score = 0;
             } else
             {
-                _score = nieuweScore;
+                Score = nieuweScore;
             }
         }
 
         public void VerhoogOfVerlaagHealth(int hoeveelheid)
         {
-            int nieuweHealth = _health + hoeveelheid;
+            int nieuweHealth = Health + hoeveelheid;
             if(nieuweHealth < 0)
             {
-                _health = 0;
+                Health = 0;
             } else if(nieuweHealth > 100)
             {
-                _health = 100;
+                Health = 100;
             } else
             {
-                _health = nieuweHealth;
+                Health = nieuweHealth;
             }
         }
 
         public void VoegSleutelToe(string sleutel)
         {
-            _sleutels.Add(sleutel);
+            Sleutels.Add(sleutel);
         }
 
         public void ResetSpeler()
         {
-            _score = 0;
-            _health = 100;
-            _sleutels.Clear();
+            Score = 0;
+            Health = 100;
+            Sleutels.Clear();
         }
 
     }
