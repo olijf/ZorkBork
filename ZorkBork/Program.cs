@@ -1,9 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Xml.Serialization;
-using System.Configuration;
-
-namespace ZorkBork
+﻿namespace ZorkBork
 {
     class Program
     {

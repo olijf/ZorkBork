@@ -1,7 +1,4 @@
-﻿using System;
-using System.Drawing;
-
-namespace ZorkBork
+﻿namespace ZorkBork
 {
     public class Speler
     {
@@ -11,7 +8,7 @@ namespace ZorkBork
         {
             get
             {
-                if (instance != null)
+                if (instance == null)
                 {
                     instance = new Speler();
                 }
