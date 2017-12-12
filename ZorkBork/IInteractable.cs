@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZorkBork
 {
-    interface IInteractable
+    public interface IInteractable
     {
 
         void Interact(Speler speler);
