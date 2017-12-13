@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZorkBork
 {
-    class ScorePickup : IInteractable
+    public class ScorePickup : IInteractable
     {
 
         public override void Interact(Speler speler)
