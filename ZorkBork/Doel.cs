@@ -15,9 +15,9 @@ namespace ZorkBork
             Console.WriteLine(string.Empty);
             Console.WriteLine(string.Empty);
             Console.WriteLine("Druk op Esc om af te sluiten.");
-            ConsoleKeyInfo info = Console.ReadKey();
             while(true)
             {
+                ConsoleKeyInfo info = Console.ReadKey();
                 if (info.Key == ConsoleKey.Escape)
                 {
                     Environment.Exit(0);
