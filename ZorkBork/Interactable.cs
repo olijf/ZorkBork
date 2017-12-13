@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 
 namespace ZorkBork
 {
-    public abstract class IInteractable
+    public abstract class Interactable
     {
 
         public abstract void Interact(Speler speler);

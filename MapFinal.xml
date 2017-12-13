@@ -1,118 +1,267 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Kaart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Positie>
+    <x>0</x>
+    <y>0</y>
+  </Positie>
+  <SpeelVeldGrootte>10</SpeelVeldGrootte>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>sleuteldestleut</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 1</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 2</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 3</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 4</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 5</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 6</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 7</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 8</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 9</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 10</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 11</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 12</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 13</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 14</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 15</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 16</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 17</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 18</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 19</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 20</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 21</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 22</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 23</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
@@ -120,118 +269,250 @@
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 24</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 25</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 26</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 27</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 28</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 29</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 30</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 31</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 32</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 33</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 34</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 35</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 36</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 37</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 38</Beschrijving>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 39</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 40</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 41</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 42</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 43</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 44</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 45</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
@@ -239,6 +520,12 @@
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 46</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
@@ -246,12 +533,24 @@
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 47</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 48</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
@@ -259,76 +558,166 @@
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 49</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 50</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 51</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 52</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 53</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 54</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 55</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 56</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 57</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 58</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 59</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 60</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 61</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 62</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 63</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
@@ -336,181 +725,397 @@
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 64</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 65</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 66</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 67</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 68</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 69</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 70</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 71</Beschrijving>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 72</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 73</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 74</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 75</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 76</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 77</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 78</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 79</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 80</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 81</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 82</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 83</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 84</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 85</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 86</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 88</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 89</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 90</Beschrijving>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 91</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 92</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 93</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 94</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 95</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 96</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 97</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 98</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+      <Vijand />
+      <Doel />
+    </InterActies>
     <Beschrijving>Discription 99</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>

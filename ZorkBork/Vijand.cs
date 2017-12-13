@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZorkBork
 {
-    class Vijand : IInteractable
+    public class Vijand : Interactable
     {
         public override void Interact(Speler speler)
         {

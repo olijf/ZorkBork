@@ -7,8 +7,8 @@ using System.Xml.Serialization;
 
 namespace ZorkBork
 {
-    [XmlInclude(typeof(IInteractable))]
-    public class HealthPickup : IInteractable
+    [XmlInclude(typeof(Interactable))]
+    public class HealthPickup : Interactable
     {
         public override void Interact(Speler speler)
         {

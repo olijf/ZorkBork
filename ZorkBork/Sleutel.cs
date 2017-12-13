@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZorkBork
 {
-    class Sleutel : IInteractable
+    class Sleutel : Interactable
     {
 
         public override void Interact(Speler speler)

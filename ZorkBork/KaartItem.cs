@@ -26,8 +26,11 @@ namespace ZorkBork
         }
 
         [XmlArray("InterActies")]
-        [XmlArrayItem("HealthPickup", typeof(HealthPickup))]
-        public List<IInteractable> interacties;
+        [XmlArrayItem(nameof(HealthPickup), typeof(HealthPickup))]
+        [XmlArrayItem(nameof(ScorePickup), typeof(ScorePickup))]
+        [XmlArrayItem(nameof(Doel), typeof(Doel))]
+        [XmlArrayItem(nameof(Vijand), typeof(Vijand))]
+        public List<Interactable> interacties;
 
         public bool IsRichtingAllowed(Richting richting)
         {
@@ -56,7 +59,7 @@ namespace ZorkBork
             return returnString;
         }
 
-        public IInteractable GetInteractable()
+        public Interactable GetInteractable()
         {
             return interacties.Pop();
         }

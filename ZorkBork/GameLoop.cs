@@ -22,10 +22,15 @@ namespace ZorkBork
         {
             // https://stackoverflow.com/a/2611529
             Console.WriteLine(Kaart.Instance.GetCurrentPosition());
+            /*
             foreach (var item in Kaart.Instance.KaartItemList)
             {
                 item.interacties.Add(new HealthPickup());
+                item.interacties.Add(new ScorePickup());
+                item.interacties.Add(new Vijand());
+                item.interacties.Add(new Doel());
             }
+            */
             var interactieKey = Console.ReadKey().Key;
             if (interactieKey == ConsoleKey.Delete)
             {
