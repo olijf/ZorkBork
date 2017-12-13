@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace ZorkBork
 {
-    public interface IInteractable
+    public abstract class IInteractable
     {
 
-        void Interact(Speler speler);
+        public abstract void Interact(Speler speler);
 
       /*   private bool _beschikbaar;
          private T _waarde;

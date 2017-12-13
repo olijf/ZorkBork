@@ -24,7 +24,9 @@ namespace ZorkBork
             get { return interactieRichting; }
             set { interactieRichting = value; }
         }
-        [XmlElement]
+
+        [XmlArray("InterActies")]
+        [XmlArrayItem("HealthPickup", typeof(HealthPickup))]
         public List<IInteractable> interacties;
 
         public bool IsRichtingAllowed(Richting richting)
