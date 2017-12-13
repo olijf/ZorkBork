@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UnitTestsVijand.cs" />
     <Compile Include="KaartItemTest.cs" />
     <Compile Include="KaartTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
