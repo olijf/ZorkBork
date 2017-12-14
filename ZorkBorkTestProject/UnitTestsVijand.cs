@@ -1,5 +1,7 @@
 ﻿using ZorkBork;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.QualityTools.Testing.Fakes;
+using System;
 
 namespace ZorkBorkTestProject
 {
@@ -8,21 +10,46 @@ namespace ZorkBorkTestProject
     {
 
         [TestMethod]
-        public void CheckScore()
+        public void CheckScoreWhenWon()
         {
             var speler = new Speler();
             var vijand = new Vijand();
-            vijand.Interact(speler);
-            Assert.IsTrue(speler.Score == 200 || speler.Score == 0);
+
+            using (ShimsContext.Create())
+            {
+
+                ZorkBork.Fakes.ShimRandomWrapper.GetRandomNumber = () =>
+                {
+                    return 3;
+                };
+
+                vijand.Interact(speler);
+
+                Assert.AreEqual(200, speler.Score);
+
+            }
         }
 
         [TestMethod]
-        public void CheckHealth()
+        public void CheckHealthAndScoreWhenLost()
         {
             var speler = new Speler();
-            var vijand = new ZorkBork.Vijand();
-            vijand.Interact(speler);
-            Assert.IsTrue(speler.Health == 100 || speler.Score == 75);
+            var vijand = new Vijand();
+
+            using (ShimsContext.Create())
+            {
+
+                ZorkBork.Fakes.ShimRandomWrapper.GetRandomNumber = () =>
+                {
+                    return 8;
+                };
+
+                vijand.Interact(speler);
+
+                Assert.AreEqual(0, speler.Score);
+                Assert.AreEqual(75, speler.Health);
+
+            }
         }
     }
 }
