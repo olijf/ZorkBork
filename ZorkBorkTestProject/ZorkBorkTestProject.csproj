@@ -28,6 +28,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\..\..\Downloads\C2sc.Rules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -58,6 +59,7 @@
   <ItemGroup>
     <Compile Include="Comparers\KaartComparer.cs" />
     <Compile Include="Comparers\KaartItemComparer.cs" />
+    <Compile Include="GameLoopTest.cs" />
     <Compile Include="UnitTestsVijand.cs" />
     <Compile Include="KaartItemTest.cs" />
     <Compile Include="KaartTest.cs" />

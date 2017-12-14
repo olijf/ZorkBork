@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using ZorkBork.Wrappers;
 
 namespace ZorkBork
 {
@@ -13,7 +14,7 @@ namespace ZorkBork
         public override void Interact(Speler speler)
         {
             speler.VerhoogOfVerlaagHealth(100);
-            Console.WriteLine("je hebt een health pickup gescoord!!!");
+            ConsoleWrapper.WriteLine("je hebt een health pickup gescoord!!!");
         }
     }
 }

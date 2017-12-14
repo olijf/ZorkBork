@@ -11,7 +11,7 @@ namespace ZorkBorkTestProject
         public void CheckScore()
         {
             var speler = new Speler();
-            var vijand = new ZorkBork.Vijand();
+            var vijand = new Vijand();
             vijand.Interact(speler);
             Assert.IsTrue(speler.Score == 200 || speler.Score == 0);
         }

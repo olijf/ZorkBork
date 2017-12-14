@@ -15,7 +15,7 @@ namespace ZorkBorkTestProject
     public class KaartTest
     {
 
-        private static Kaart CreateKaart2x2()
+        public static Kaart CreateKaart2x2()
         {
             return new Kaart
             {
@@ -55,6 +55,7 @@ namespace ZorkBorkTestProject
                 var compare = new KaartComparer().Equals(actual, expected);
                 Assert.IsTrue(compare);
             }
+            File.Delete(@"map.xml");    
         }
         [TestMethod]
         public void LaatKaartZien()
@@ -71,6 +72,19 @@ namespace ZorkBorkTestProject
 
                 Console.Write(kaart);
                 Assert.AreEqual(kaart.KaartItemList.Count, Regex.Matches(writer.ToString(), Environment.NewLine).Count);
+
+            }
+        }
+        [TestMethod]
+        public void LaatKaartZienMetInteractables()
+        {
+            var kaart = CreateKaart2x2();
+            using (var writer = new StringWriter())
+            {
+                Console.SetOut(writer);
+
+                Console.Write(kaart);
+                Assert.AreEqual(kaart.KaartItemList.Count * 2, Regex.Matches(writer.ToString(), Environment.NewLine).Count);
 
             }
         }
@@ -91,8 +105,15 @@ namespace ZorkBorkTestProject
             var voorOmhoog = kaart.Positie;
             voorOmhoog.y += 1;
             kaart.UpdatePositie(Richting.Omhoog);
-
             Assert.IsTrue(voorOmhoog.Equals(kaart.Positie));
+        }
+        [TestMethod]
+        public void CheckKanNietNaarOmlaag()
+        {
+            var kaart = CreateKaart2x2();
+            var voorOmlaag = kaart.Positie;
+            kaart.UpdatePositie(Richting.Omlaag);
+            Assert.IsTrue(voorOmlaag.Equals(kaart.Positie));
         }
         [TestMethod]
         public void CheckUpdatePositieFailed()
