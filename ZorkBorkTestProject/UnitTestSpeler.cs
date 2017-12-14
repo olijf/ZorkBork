@@ -89,14 +89,16 @@ namespace ZorkBorkTestProject
             Assert.AreEqual(0, speler.Score);
         }
 
+        [TestMethod]
         public void ResetSpelerHealthCheck()
         {
             var speler = new Speler();
             speler.VerhoogOfVerlaagHealth(-50);
             speler.ResetSpeler();
-            Assert.AreEqual(0, speler.Health);
+            Assert.AreEqual(100, speler.Health);
         }
 
+        [TestMethod]
         public void ResetSpelerSleutelCheck()
         {
             var speler = new Speler();
