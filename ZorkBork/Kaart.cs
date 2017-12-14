@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Xml.Serialization;
 using ZorkBork.Wrappers;
 
@@ -20,11 +18,11 @@ namespace ZorkBork
         [XmlElement("KaartItem")]
         public List<KaartItem> KaartItemList = new List<KaartItem>();
         
-        public static Kaart LeesXML()
+        public static Kaart LeesXML(string kaartBestand)
         {
             Kaart result = null;
             var serializer = new XmlSerializer(typeof(Kaart));
-            using (var streamReader = new StreamReader(Settings.GetValue("kaartBestand")))
+            using (var streamReader = new StreamReader(kaartBestand))
             {
                 result = (Kaart)serializer.Deserialize(streamReader);
             };

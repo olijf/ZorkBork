@@ -23,17 +23,12 @@ namespace ZorkBorkTestProject
                 {
                     return KaartTest.CreateKaart2x2();
                 };
-                ZorkBork.Wrappers.Fakes.ShimConsoleWrapper.ReadKey = () =>
-                {
-                    // return new ConsoleKeyInfo('↑', ConsoleKey.UpArrow, false, false, false);
-                    return ConsoleKey.UpArrow;
-                };
                 var gameLoop = new GameLoop();
 
                 using (var writer = new StringWriter())
                 {
+                    gameLoop.
                     Console.SetOut(writer);
-                    gameLoop.VolgendeStap(); 
                 }
 
             }

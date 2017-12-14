@@ -17,10 +17,11 @@ namespace ZorkBorkTestProject
         {
             var speler = new Speler();
             var healthPickup = new HealthPickup();
-
+            speler.VerhoogOfVerlaagHealth(-50);
+            var healthVoorVerhoog = speler.Health;
             healthPickup.Interact(speler);
 
-            Assert.AreEqual(100, speler.Health);
+            Assert.AreNotEqual(healthVoorVerhoog, speler.Health);
         }
     }
 }
