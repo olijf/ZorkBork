@@ -8,13 +8,8 @@ namespace ZorkBork.Wrappers
 {
     public class RandomWrapper
     {
-        private static Random _random;
-
-        public RandomWrapper()
-        {
-            _random = new Random();
-        }
-
+        private static Random _random = new Random();
+        
         public static int GetRandomNumber()
         {
             return _random.Next(0, 10);

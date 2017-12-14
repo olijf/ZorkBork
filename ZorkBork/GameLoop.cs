@@ -24,35 +24,49 @@ namespace ZorkBork
 
         public void VolgendeStap()
         {
-
-            // https://stackoverflow.com/a/2611529
             ConsoleWrapper.WriteLine(_kaart.GetCurrentPosition());
             var interactieKey = ConsoleWrapper.ReadKey();
+            VerwerkInput(interactieKey,VolgendeStap);
+        }
+
+        private void VerwerkInput(ConsoleKey interactieKey, Action callBack)
+        {
             if (interactieKey == ConsoleKey.Delete)
             {
-                var serializer = new XmlSerializer(typeof(Kaart));
-                using (var streamWriter = new StreamWriter(@"map.xml"))
-                {
-                    serializer.Serialize(streamWriter, _kaart);
-                }
-                Environment.Exit(0);
+                SaveGame();
+                return;
             }
             else if (interactieKey == ConsoleKey.E)
             {
-                var interactable = _kaart.GetCurrentPosition().GetInteractable();
-                if (interactable != null)
-                {
-                    interactable.Interact(_speler);
-                }
-                else { 
-                    ConsoleWrapper.WriteLine("E is hier geen geldige keuze");
-                }
+                InteractMetHuidigeInteractable();
             }
             else
             {
                 _kaart.UpdatePositie((Richting)interactieKey);
             }
-            VolgendeStap();
+            callBack();
+        }
+
+        private void SaveGame()
+        {
+            var serializer = new XmlSerializer(typeof(Kaart));
+            using (var streamWriter = new StreamWriter(@"SaveGame.xml"))
+            {
+                serializer.Serialize(streamWriter, _kaart);
+            }
+        }
+
+        private void InteractMetHuidigeInteractable()
+        {
+            var interactable = _kaart.GetCurrentPosition().GetInteractable();
+            if (interactable != null)
+            {
+                interactable.Interact(_speler);
+            }
+            else
+            {
+                ConsoleWrapper.WriteLine("E is hier geen geldige keuze");
+            }
         }
     }
 }

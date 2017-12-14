@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZorkBork.Wrappers
 {
-    public static class ConsoleWrapper
+    public class ConsoleWrapper
     {
         public static ConsoleKey ReadKey()
         {

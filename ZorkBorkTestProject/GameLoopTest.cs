@@ -26,7 +26,7 @@ namespace ZorkBorkTestProject
                 ZorkBork.Wrappers.Fakes.ShimConsoleWrapper.ReadKey = () =>
                 {
                     // return new ConsoleKeyInfo('↑', ConsoleKey.UpArrow, false, false, false);
-                    return ConsoleKey.Delete;
+                    return ConsoleKey.UpArrow;
                 };
                 var gameLoop = new GameLoop();
 
