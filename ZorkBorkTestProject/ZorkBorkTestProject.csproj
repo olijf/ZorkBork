@@ -59,6 +59,8 @@
     <Compile Include="Comparers\KaartComparer.cs" />
     <Compile Include="Comparers\KaartItemComparer.cs" />
     <Compile Include="GameLoopTest.cs" />
+    <Compile Include="UnitTestsHealth.cs" />
+    <Compile Include="UnitTestsScore.cs" />
     <Compile Include="UnitTestsVijand.cs" />
     <Compile Include="KaartItemTest.cs" />
     <Compile Include="KaartTest.cs" />
