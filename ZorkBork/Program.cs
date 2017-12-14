@@ -14,8 +14,6 @@ namespace ZorkBork
 
             gameLoop.VolgendeStap();
 
-            var hi = new Testje();
-            hi.EenLegeMethod();
         }
     }
 }
