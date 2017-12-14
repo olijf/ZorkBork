@@ -3,9 +3,11 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text.RegularExpressions;
 using System.Xml.Serialization;
 using ZorkBork;
+using ZorkBorkTestProject.Comparers;
 
 namespace ZorkBorkTestProject
 {
@@ -35,11 +37,11 @@ namespace ZorkBorkTestProject
         [TestMethod]
         public void SerializeKaart()
         {
-            var kaart = CreateKaart2x2();
+            var expected = CreateKaart2x2();
             var serializer = new XmlSerializer(typeof(Kaart));
             using (var streamWriter = new StreamWriter(@"map.xml"))
             {
-                serializer.Serialize(streamWriter, kaart);
+                serializer.Serialize(streamWriter, expected);
             }
             using (ShimsContext.Create())
             {
@@ -48,13 +50,10 @@ namespace ZorkBorkTestProject
                     return @"map.xml";
 
                 };
-                ZorkBork.Fakes.ShimSettings.GetValueAsIntString = (_) =>
-                {
-                    return 10;
 
-                };
-                var kaartFromXml = Kaart.LeesXML();
-                Assert.AreEqual(kaart,kaartFromXml);
+                var actual = Kaart.LeesXML();
+                var compare = new KaartComparer().Equals(actual, expected);
+                Assert.IsTrue(compare);
             }
         }
         [TestMethod]
