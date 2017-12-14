@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Xml.Serialization;
 
 namespace ZorkBork
@@ -9,7 +10,7 @@ namespace ZorkBork
     [XmlType]
     public class Kaart
     {
-        private static Kaart instance;
+        private Kaart instance;
 
         [XmlElement]
         public Positie Positie = new Positie { x = 0, y = 0 };
@@ -19,41 +20,16 @@ namespace ZorkBork
 
         [XmlElement("KaartItem")]
         public List<KaartItem> KaartItemList = new List<KaartItem>();
-
-        private Kaart()
+        
+        public static Kaart LeesXML()
         {
-            SpeelVeldGrootte = Settings.GetValueAsInt("speelVeldGrootte");
-            /*
-            var Rand = new Random();
-            for (int i = 0; i < SpeelVeldGrootte * SpeelVeldGrootte; i++)
+            Kaart result = null;
+            var serializer = new XmlSerializer(typeof(Kaart));
+            using (var streamReader = new StreamReader(Settings.GetValue("kaartBestand")))
             {
-                var nieuwKaartItem = new KaartItem();
-                nieuwKaartItem.Beschrijving = string.Format("Discription {0}", i);
-                var nieuwRichting = new List<Richting>();
-                nieuwRichting.Add(Richting.Omhoog);
-                nieuwRichting.Add(Richting.Omlaag);
-                nieuwRichting.Add(Richting.Links);
-                nieuwRichting.Add(Richting.Rechts);
-                nieuwKaartItem.InteractieRichting = nieuwRichting;
-                List.Add(nieuwKaartItem);
-            }
-            */
-        }
-        public static Kaart Instance
-        {
-            get
-            {
-                if (instance == null)
-                {
-                    var serializer = new XmlSerializer(typeof(Kaart));
-                    using (var streamReader = new StreamReader(Settings.GetValue("kaartBestand")))
-                    {
-                        instance = (Kaart)serializer.Deserialize(streamReader);
-                        instance.SpeelVeldGrootte = Settings.GetValueAsInt("speelVeldGrootte");
-                    };
-                }
-                return instance;
-            }
+                result = (Kaart)serializer.Deserialize(streamReader);
+            };
+            return result;
         }
 
         public override string ToString()

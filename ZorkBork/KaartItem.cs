@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Xml.Serialization;
 using ZorkBork.Extensions;
 namespace ZorkBork
@@ -16,7 +17,7 @@ namespace ZorkBork
             get { return beschrijving; }
             set { beschrijving = value; }
         }
-        private List<Richting> interactieRichting;
+        private List<Richting> interactieRichting = new List<Richting>();
 
         [XmlElement]
         public List<Richting> InteractieRichting
@@ -30,7 +31,7 @@ namespace ZorkBork
         [XmlArrayItem(nameof(ScorePickup), typeof(ScorePickup))]
         [XmlArrayItem(nameof(Doel), typeof(Doel))]
         [XmlArrayItem(nameof(Vijand), typeof(Vijand))]
-        public List<Interactable> interacties;
+        public List<Interactable> interacties = new List<Interactable>();
 
         public bool IsRichtingAllowed(Richting richting)
         {
@@ -58,7 +59,6 @@ namespace ZorkBork
             }
             return returnString;
         }
-
         public Interactable GetInteractable()
         {
             return interacties.Pop();

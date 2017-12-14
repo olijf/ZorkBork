@@ -1,146 +1,113 @@
 ﻿using Microsoft.QualityTools.Testing.Fakes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text.RegularExpressions;
+using System.Xml.Serialization;
 using ZorkBork;
+using ZorkBorkTestProject.Comparers;
 
 namespace ZorkBorkTestProject
 {
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
     public class KaartTest
     {
+
+        private static Kaart CreateKaart2x2()
+        {
+            return new Kaart
+            {
+                SpeelVeldGrootte = 2,
+                KaartItemList = new List<KaartItem> {
+                    new KaartItem { Beschrijving = "1", InteractieRichting = new List<Richting> { Richting.Omhoog, Richting.Rechts }, interacties = new List<Interactable> { new HealthPickup() } },
+                    new KaartItem { Beschrijving = "2", InteractieRichting = new List<Richting> { Richting.Omhoog, Richting.Links }, interacties = new List<Interactable> { new HealthPickup() } },
+                    new KaartItem { Beschrijving = "3", InteractieRichting = new List<Richting> { Richting.Omlaag, Richting.Rechts }, interacties = new List<Interactable> { new HealthPickup() } },
+                    new KaartItem { Beschrijving = "4", InteractieRichting = new List<Richting> { Richting.Omlaag, Richting.Links }, interacties = new List<Interactable> { new HealthPickup() } }
+                }
+            };
+        }
         [TestMethod]
         public void CreateKaartItemsCollectionObject()
         {
-
+            var kaart = CreateKaart2x2();
+            Assert.IsNotNull(kaart);
+        }
+        [TestMethod]
+        public void SerializeKaart()
+        {
+            var expected = CreateKaart2x2();
+            var serializer = new XmlSerializer(typeof(Kaart));
+            using (var streamWriter = new StreamWriter(@"map.xml"))
+            {
+                serializer.Serialize(streamWriter, expected);
+            }
             using (ShimsContext.Create())
             {
                 ZorkBork.Fakes.ShimSettings.GetValueString = (_) =>
                 {
-                    return @"..\..\..\MapFinal.xml";
+                    return @"map.xml";
 
                 };
-                ZorkBork.Fakes.ShimSettings.GetValueAsIntString = (_) =>
-                {
-                    return 10;
 
-                };
-                Assert.IsNotNull(Kaart.Instance);
+                var actual = Kaart.LeesXML();
+                var compare = new KaartComparer().Equals(actual, expected);
+                Assert.IsTrue(compare);
             }
         }
-
         [TestMethod]
         public void LaatKaartZien()
         {
-            using (ShimsContext.Create())
+            var kaart = new Kaart
             {
-                ZorkBork.Fakes.ShimSettings.GetValueString = (_) =>
-                {
-                    return @"..\..\..\MapFinal.xml";
+                SpeelVeldGrootte = 1,
+                KaartItemList = new List<KaartItem> {
+                    new KaartItem { Beschrijving = "1", InteractieRichting = new List<Richting> { Richting.Omhoog, Richting.Rechts }} }
+            };
+            using (var writer = new StringWriter())
+            {
+                Console.SetOut(writer);
 
-                };
-                ZorkBork.Fakes.ShimSettings.GetValueAsIntString = (_) =>
-                {
-                    return 10;
+                Console.Write(kaart);
+                Assert.AreEqual(kaart.KaartItemList.Count, Regex.Matches(writer.ToString(), Environment.NewLine).Count);
 
-                };
-                using (var writer = new StringWriter())
-                {
-                    Console.SetOut(writer);
-
-                    Console.Write(Kaart.Instance);
-                    Assert.AreEqual(Kaart.Instance.KaartItemList.Count, Regex.Matches(writer.ToString(), Environment.NewLine).Count);
-
-                }
             }
         }
 
         [TestMethod]
         public void IsPositieVeranderd()
         {
-            using (ShimsContext.Create())
-            {
-                ZorkBork.Fakes.ShimSettings.GetValueString = (_) =>
-                {
-                    return @"..\..\..\MapFinal.xml";
-
-                };
-                ZorkBork.Fakes.ShimSettings.GetValueAsIntString = (_) =>
-                {
-                    return 10;
-
-                };
-                var voorNieuwePositie = Kaart.Instance.Positie;
-                Kaart.Instance.UpdatePositie(Richting.Omhoog);
-                Assert.AreNotSame(voorNieuwePositie, Kaart.Instance.Positie);
-            }
+            var kaart = CreateKaart2x2();
+            var voorNieuwePositie = kaart.Positie;
+            kaart.UpdatePositie(Richting.Rechts);
+            Assert.AreNotSame(voorNieuwePositie, kaart.Positie);
         }
 
         [TestMethod]
         public void CheckOmhoog()
         {
-            using (ShimsContext.Create())
-            {
-                ZorkBork.Fakes.ShimSettings.GetValueString = (_) =>
-                {
-                    return @"..\..\..\MapFinal.xml";
+            var kaart = CreateKaart2x2();
+            var voorOmhoog = kaart.Positie;
+            voorOmhoog.y += 1;
+            kaart.UpdatePositie(Richting.Omhoog);
 
-                };
-
-                ZorkBork.Fakes.ShimSettings.GetValueAsIntString = (_) =>
-                {
-                    return 10;
-
-                };
-                var voorOmhoog = Kaart.Instance.Positie;
-                voorOmhoog.y += 1;
-                Kaart.Instance.UpdatePositie(Richting.Omhoog);
-                
-                Assert.IsTrue(voorOmhoog.Equals(Kaart.Instance.Positie));
-            }
+            Assert.IsTrue(voorOmhoog.Equals(kaart.Positie));
         }
-
         [TestMethod]
         public void CheckUpdatePositieFailed()
         {
-            using (ShimsContext.Create())
-            {
-                ZorkBork.Fakes.ShimSettings.GetValueString = (_) =>
-                {
-                    return @"..\..\..\MapFinal.xml";
+            var kaart = CreateKaart2x2();
+            var voorLinks = kaart.Positie;
+            kaart.UpdatePositie(Richting.Links);
 
-                };
-
-                ZorkBork.Fakes.ShimSettings.GetValueAsIntString = (_) =>
-                {
-                    return 10;
-
-                };
-                var voorLinks = Kaart.Instance.Positie;
-                Kaart.Instance.UpdatePositie(Richting.Links);
-
-                Assert.AreEqual(voorLinks, Kaart.Instance.Positie);
-            }
         }
-        [Ignore]
+        [TestMethod]
         public void RemoveKaartItemsFromCollection()
         {
-            using (ShimsContext.Create())
-            {
-                ZorkBork.Fakes.ShimSettings.GetValueString = (_) =>
-                {
-                    return @"..\..\..\MapFinal.xml";
-
-                };
-                ZorkBork.Fakes.ShimSettings.GetValueAsIntString = (_) =>
-                {
-                    return 10;
-
-                };
-                Kaart.Instance.KaartItemList.Clear();
-                Assert.AreEqual(0, Kaart.Instance.KaartItemList.Count);
-            }
+            var kaart = CreateKaart2x2();
+            kaart.KaartItemList.Clear();
+            Assert.AreEqual(0, kaart.KaartItemList.Count);
         }
     }
 }

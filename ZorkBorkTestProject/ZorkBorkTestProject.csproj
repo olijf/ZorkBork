@@ -56,11 +56,14 @@
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
     <Reference Include="ZorkBork.Fakes">
       <HintPath>FakesAssemblies\ZorkBork.Fakes.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comparers\KaartComparer.cs" />
+    <Compile Include="Comparers\KaartItemComparer.cs" />
     <Compile Include="UnitTestsVijand.cs" />
     <Compile Include="KaartItemTest.cs" />
     <Compile Include="KaartTest.cs" />

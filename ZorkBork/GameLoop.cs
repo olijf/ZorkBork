@@ -12,18 +12,21 @@ namespace ZorkBork
     class GameLoop
     {
         private Speler _speler;
+        private Kaart _kaart;
 
-        public GameLoop(Speler speler)
+        public GameLoop()
         {
-            _speler = speler;
+            //Initieren speler 
+            _speler = new Speler();
+            _kaart = Kaart.LeesXML();            
         }
 
         public void VolgendeStap()
         {
             // https://stackoverflow.com/a/2611529
-            Console.WriteLine(Kaart.Instance.GetCurrentPosition());
+            Console.WriteLine(_kaart.GetCurrentPosition());
             /*
-            foreach (var item in Kaart.Instance.KaartItemList)
+            foreach (var item in _kaart.KaartItemList)
             {
                 item.interacties.Add(new HealthPickup());
                 item.interacties.Add(new ScorePickup());
@@ -37,13 +40,13 @@ namespace ZorkBork
                 var serializer = new XmlSerializer(typeof(Kaart));
                 using (var streamWriter = new StreamWriter(@"map.xml"))
                 {
-                    serializer.Serialize(streamWriter, Kaart.Instance);
+                    serializer.Serialize(streamWriter, _kaart);
                 }
                 Environment.Exit(0);
             }
             else if (interactieKey == ConsoleKey.E)
             {
-                var interactable = Kaart.Instance.GetCurrentPosition().GetInteractable();
+                var interactable = _kaart.GetCurrentPosition().GetInteractable();
                 if (interactable != null)
                 {
                     interactable.Interact(_speler);
@@ -54,7 +57,7 @@ namespace ZorkBork
             }
             else
             {
-                Kaart.Instance.UpdatePositie((Richting)interactieKey);
+                _kaart.UpdatePositie((Richting)interactieKey);
             }
             VolgendeStap();
         }
