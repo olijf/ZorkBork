@@ -27,7 +27,7 @@ namespace ZorkBork
 
             // https://stackoverflow.com/a/2611529
             ConsoleWrapper.WriteLine(_kaart.GetCurrentPosition());
-            var interactieKey = ConsoleWrapper.ReadKey().Key;
+            var interactieKey = ConsoleWrapper.ReadKey();
             if (interactieKey == ConsoleKey.Delete)
             {
                 var serializer = new XmlSerializer(typeof(Kaart));

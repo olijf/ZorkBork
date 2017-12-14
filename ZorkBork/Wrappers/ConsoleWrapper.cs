@@ -8,9 +8,9 @@ namespace ZorkBork.Wrappers
 {
     public static class ConsoleWrapper
     {
-        public static ConsoleKeyInfo ReadKey()
+        public static ConsoleKey ReadKey()
         {
-            return Console.ReadKey(true);
+            return Console.ReadKey(true).Key;
         }
 
         public static void Write(object data)

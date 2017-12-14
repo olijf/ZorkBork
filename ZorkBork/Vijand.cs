@@ -10,7 +10,7 @@ namespace ZorkBork
     {
         public override void Interact(Speler speler)
         {
-            int randomNumber = RandomWrapper.GetRandomNumber();
+            int randomNumber = Wrappers.RandomWrapper.GetRandomNumber();
 
             //0-4 = win, 5-9 = lose
 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ZorkBork;
+using ZorkBork.Wrappers;
 
 namespace ZorkBorkTestProject
 {
@@ -21,6 +22,11 @@ namespace ZorkBorkTestProject
                 ZorkBork.Fakes.ShimKaart.LeesXML = () =>
                 {
                     return KaartTest.CreateKaart2x2();
+                };
+                ZorkBork.Wrappers.Fakes.ShimConsoleWrapper.ReadKey = () =>
+                {
+                    // return new ConsoleKeyInfo('↑', ConsoleKey.UpArrow, false, false, false);
+                    return ConsoleKey.Delete;
                 };
                 var gameLoop = new GameLoop();
 
