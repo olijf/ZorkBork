@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ZorkBork.Wrappers;
 
 namespace ZorkBork
 {
@@ -10,15 +11,15 @@ namespace ZorkBork
     {
         public override void Interact(Speler speler)
         {
-            Console.WriteLine("------------------MISSIE GESLAAGD!------------------");
-            Console.WriteLine("Score: " + speler.Score);
-            Console.WriteLine(string.Empty);
-            Console.WriteLine(string.Empty);
-            Console.WriteLine("Druk op Esc om af te sluiten.");
+            ConsoleWrapper.WriteLine("------------------MISSIE GESLAAGD!------------------");
+            ConsoleWrapper.WriteLine("Score: " + speler.Score);
+            ConsoleWrapper.WriteLine(string.Empty);
+            ConsoleWrapper.WriteLine(string.Empty);
+            ConsoleWrapper.WriteLine("Druk op Esc om af te sluiten.");
             while(true)
             {
-                ConsoleKeyInfo info = Console.ReadKey();
-                if (info.Key == ConsoleKey.Escape)
+                var info = ConsoleWrapper.ReadKey();
+                if (info == ConsoleKey.Escape)
                 {
                     Environment.Exit(0);
                 }

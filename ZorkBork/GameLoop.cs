@@ -5,11 +5,12 @@ using System.IO;
 using System.Xml.Serialization;
 using System.Text;
 using System.Threading.Tasks;
+using ZorkBork.Wrappers;
 
 namespace ZorkBork
 {
 
-    class GameLoop
+    public class GameLoop
     {
         private Speler _speler;
         private Kaart _kaart;
@@ -23,18 +24,10 @@ namespace ZorkBork
 
         public void VolgendeStap()
         {
+
             // https://stackoverflow.com/a/2611529
-            Console.WriteLine(_kaart.GetCurrentPosition());
-            /*
-            foreach (var item in _kaart.KaartItemList)
-            {
-                item.interacties.Add(new HealthPickup());
-                item.interacties.Add(new ScorePickup());
-                item.interacties.Add(new Vijand());
-                item.interacties.Add(new Doel());
-            }
-            */
-            var interactieKey = Console.ReadKey().Key;
+            ConsoleWrapper.WriteLine(_kaart.GetCurrentPosition());
+            var interactieKey = ConsoleWrapper.ReadKey();
             if (interactieKey == ConsoleKey.Delete)
             {
                 var serializer = new XmlSerializer(typeof(Kaart));
@@ -52,7 +45,7 @@ namespace ZorkBork
                     interactable.Interact(_speler);
                 }
                 else { 
-                    Console.WriteLine("E is hier geen geldige keuze");
+                    ConsoleWrapper.WriteLine("E is hier geen geldige keuze");
                 }
             }
             else

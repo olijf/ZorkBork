@@ -18,7 +18,7 @@ namespace ZorkBorkTestProject
             using (ShimsContext.Create())
             {
 
-                ZorkBork.Fakes.ShimRandomWrapper.GetRandomNumber = () =>
+                ZorkBork.Wrappers.Fakes.ShimRandomWrapper.GetRandomNumber = () =>
                 {
                     return 3;
                 };
@@ -39,7 +39,7 @@ namespace ZorkBorkTestProject
             using (ShimsContext.Create())
             {
 
-                ZorkBork.Fakes.ShimRandomWrapper.GetRandomNumber = () =>
+                ZorkBork.Wrappers.Fakes.ShimRandomWrapper.GetRandomNumber = () =>
                 {
                     return 8;
                 };

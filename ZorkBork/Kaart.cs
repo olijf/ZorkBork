@@ -4,14 +4,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Xml.Serialization;
+using ZorkBork.Wrappers;
 
 namespace ZorkBork
 {
     [XmlType]
     public class Kaart
     {
-        private Kaart instance;
-
         [XmlElement]
         public Positie Positie = new Positie { x = 0, y = 0 };
 
@@ -65,17 +64,13 @@ namespace ZorkBork
         {
             var r = GetCurrentPosition().IsRichtingAllowed(richting);
             if (!r)
-                Console.WriteLine("dat kan niet!");
+                ConsoleWrapper.WriteLine("dat kan niet!");
             return r && BoundsCheck(bound);
         }
 
         private bool BoundsCheck(int nieuweWaarde)
         {
-            if (nieuweWaarde < SpeelVeldGrootte && nieuweWaarde >= 0)
-            {
-                return true;
-            }
-            return false;
+            return nieuweWaarde < SpeelVeldGrootte && nieuweWaarde >= 0;
         }
 
         public KaartItem GetCurrentPosition()
