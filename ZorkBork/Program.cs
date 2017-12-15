@@ -9,15 +9,15 @@ namespace ZorkBork
     {
         static void Main(string[] args)
         {
-
+            var restoreSaveGame = false;
             if (File.Exists(Settings.GetValue("saveGameFile")))
             {
                 Console.WriteLine("Wil je verder gaan met je vorige spel? Toets Enter:");
-                bool restoreSaveGame = Console.ReadKey().Key == ConsoleKey.Enter;
-
-                var gameLoop = new GameLoop(restoreSaveGame);
-                gameLoop.VolgendeStap();
+                restoreSaveGame = Console.ReadKey().Key == ConsoleKey.Enter;
             }
+
+            var gameLoop = new GameLoop(restoreSaveGame);
+            gameLoop.VolgendeStap();
         }
     }
 }
