@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.IO;
 using System.Xml.Serialization;
-using System.Text;
-using System.Threading.Tasks;
 using ZorkBork.Wrappers;
 
 namespace ZorkBork
@@ -15,21 +11,24 @@ namespace ZorkBork
         private Speler _speler;
         private Kaart _kaart;
 
-        public GameLoop()
+        public GameLoop(bool restoreSaveGame)
         {
             //Initieren speler 
             _speler = new Speler();
-            _kaart = Kaart.LeesXML();            
+            if (restoreSaveGame)
+                _kaart = Kaart.LeesXML(Settings.GetValue("saveGameFile"));
+            else
+                _kaart = Kaart.LeesXML(Settings.GetValue("kaartBestand"));
         }
 
         public void VolgendeStap()
         {
             ConsoleWrapper.WriteLine(_kaart.GetCurrentPosition());
             var interactieKey = ConsoleWrapper.ReadKey();
-            VerwerkInput(interactieKey,VolgendeStap);
+            VerwerkInput(interactieKey, VolgendeStap);
         }
 
-        private void VerwerkInput(ConsoleKey interactieKey, Action callBack)
+        public void VerwerkInput(ConsoleKey interactieKey, Action callBack)
         {
             if (interactieKey == ConsoleKey.Delete)
             {
@@ -73,13 +72,13 @@ namespace ZorkBork
         private void SaveGame()
         {
             var serializer = new XmlSerializer(typeof(Kaart));
-            using (var streamWriter = new StreamWriter(@"SaveGame.xml"))
+            using (var streamWriter = new StreamWriter(Settings.GetValue("saveGameFile")))
             {
                 serializer.Serialize(streamWriter, _kaart);
             }
         }
 
-        private void InteractMetHuidigeInteractable()
+        public void InteractMetHuidigeInteractable()
         {
             var interactable = _kaart.GetCurrentPosition().GetInteractable();
             if (interactable != null)
