@@ -1,12 +1,17 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Xml.Serialization;
 
 namespace ZorkBork
 {
+    [XmlType]
     public class Speler
     {
 
         private int _score;
 
+        [XmlElement]
         public int Score
         {
             get { return _score; }
@@ -15,14 +20,16 @@ namespace ZorkBork
 
         private int _health;
 
+        [XmlElement]
         public int Health
         {
             get { return _health; }
             set { _health = value; }
         }
-
+        
         private List<string> _sleutels;
-
+        
+        [XmlElement]
         public List<string> Sleutels
         {
             get { return _sleutels; }

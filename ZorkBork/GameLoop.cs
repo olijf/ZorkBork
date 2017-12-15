@@ -16,11 +16,17 @@ namespace ZorkBork
         public GameLoop(bool restoreSaveGame)
         {
             //Initieren speler 
-            _speler = new Speler();
             if (restoreSaveGame)
-                _kaart = Kaart.LeesXML(Settings.GetValue("saveGameFile"));
+            {
+
+                _speler = Settings.LeesXML<Speler>(Settings.GetValue("spelerSaveGame"));
+                _kaart = Settings.LeesXML<Kaart>(Settings.GetValue("saveGameFile"));
+            }
             else
-                _kaart = Kaart.LeesXML(Settings.GetValue("kaartBestand"));
+            {
+                _speler = new Speler();
+                _kaart = Settings.LeesXML<Kaart>(Settings.GetValue("kaartBestand"));
+            }
         }
 
         public void VolgendeStap()
@@ -82,6 +88,11 @@ namespace ZorkBork
             using (var streamWriter = new StreamWriter(Settings.GetValue("saveGameFile")))
             {
                 serializer.Serialize(streamWriter, _kaart);
+            }
+            var spelerSerializer = new XmlSerializer(typeof(Speler));
+            using (var streamWriter = new StreamWriter(Settings.GetValue("saveGameSpeler")))
+            {
+                spelerSerializer.Serialize(streamWriter, _speler);
             }
         }
 
