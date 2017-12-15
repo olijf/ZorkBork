@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ZorkBork.Wrappers;
+using System.Drawing;
+using Console = Colorful.Console;
+using Colorful;
 
 namespace ZorkBork
 {
@@ -11,11 +14,13 @@ namespace ZorkBork
     {
         public override void Interact(Speler speler)
         {
-            ConsoleWrapper.WriteLine("------------------MISSIE GESLAAGD!------------------");
-            ConsoleWrapper.WriteLine("Score: " + speler.Score);
-            ConsoleWrapper.WriteLine("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒");
+              Console.WriteAscii("MISSIE GESLAAGD!", Color.FromArgb(200, 200, 200));
 
-            Console.WriteLine(@"
+            Console.WriteLine("------------------MISSIE GESLAAGD!------------------");
+            Console.WriteLine("Score: " + speler.Score);
+            Console.WriteLine("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒");
+
+            Console.WriteWithGradient(@"
 
 
          .* *.               `o`o`
@@ -32,7 +37,8 @@ namespace ZorkBork
 _____________\________\___\____|_/______/_________|\/\___||______
 
 
-");
+", Color.Blue, Color.Red, 10);
+            Console.ResetColor();
         }
     }
 }
