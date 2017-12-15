@@ -37,25 +37,17 @@ namespace ZorkBorkTestProject
         [TestMethod]
         public void SerializeKaart()
         {
+            var tempFile = @"map.xml";
             var expected = CreateKaart2x2();
             var serializer = new XmlSerializer(typeof(Kaart));
-            using (var streamWriter = new StreamWriter(@"map.xml"))
+            using (var streamWriter = new StreamWriter(tempFile))
             {
                 serializer.Serialize(streamWriter, expected);
             }
-            using (ShimsContext.Create())
-            {
-                ZorkBork.Fakes.ShimSettings.GetValueString = (_) =>
-                {
-                    return @"map.xml";
-
-                };
-
-                var actual = Kaart.LeesXML();
-                var compare = new KaartComparer().Equals(actual, expected);
-                Assert.IsTrue(compare);
-            }
-            File.Delete(@"map.xml");    
+            var actual = Kaart.LeesXML(tempFile);
+            var compare = new KaartComparer().Equals(actual, expected);
+            Assert.IsTrue(compare);
+            File.Delete(tempFile);
         }
         [TestMethod]
         public void LaatKaartZien()

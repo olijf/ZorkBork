@@ -14,22 +14,34 @@ namespace ZorkBorkTestProject
     [TestClass]
     public class GameLoopTest
     {
-        public void RunGame()
+        [TestMethod]
+        public void CallBackTest()
         {
+            var callBack = false;
             using (ShimsContext.Create())
             {
-                ZorkBork.Fakes.ShimKaart.LeesXML = () =>
+                ZorkBork.Fakes.ShimKaart.LeesXMLString = (_) =>
                 {
                     return KaartTest.CreateKaart2x2();
                 };
-                var gameLoop = new GameLoop();
-
-                using (var writer = new StringWriter())
+                var gameLoop = new GameLoop(false);
+                gameLoop.VerwerkInput(ConsoleKey.UpArrow, () => callBack = true);
+                Assert.IsTrue(callBack);
+            }
+        }
+        [TestMethod]
+        public void AnderTestTestDieNogMoetWordenGevuld()
+        {
+            var callBack = false;
+            using (ShimsContext.Create())
+            {
+                ZorkBork.Fakes.ShimKaart.LeesXMLString = (_) =>
                 {
-                    gameLoop.
-                    Console.SetOut(writer);
-                }
-
+                    return KaartTest.CreateKaart2x2();
+                };
+                var gameLoop = new GameLoop(false);
+                gameLoop.VerwerkInput(ConsoleKey.UpArrow, () => callBack = true);
+                Assert.IsTrue(callBack);
             }
         }
 
