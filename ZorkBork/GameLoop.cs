@@ -35,7 +35,7 @@ namespace ZorkBork
             styleSheet.AddStyle("Je kan de volgende richting uit:", Color.MediumSlateBlue);
             styleSheet.AddStyle("Je kunt interacteren", Color.Red);
             Console.WriteLineStyled(_kaart.GetCurrentPosition().ToString(), styleSheet);
-            var interactieKey = ConsoleWrapper.ReadKey();
+            var interactieKey = Console.ReadKey().Key;
             Console.WriteLine("═══════════════════════════════════════════════════");
             Console.WriteLine();
             VerwerkInput(interactieKey, VolgendeStap);

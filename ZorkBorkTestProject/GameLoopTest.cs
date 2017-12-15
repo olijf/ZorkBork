@@ -16,10 +16,10 @@ namespace ZorkBorkTestProject
             var callBack = false;
             using (ShimsContext.Create())
             {
-                ZorkBork.Fakes.ShimKaart.LeesXMLString = (_) =>
+                ZorkBork.Fakes.ShimSettings.LeesXMLOf1String<Kaart>((_) =>
                 {
                     return KaartTest.CreateKaart2x2();
-                };
+                });
                 var gameLoop = new GameLoop(false);
                 gameLoop.VerwerkInput(ConsoleKey.UpArrow, () => callBack = true);
                 Assert.IsTrue(callBack);
@@ -31,10 +31,10 @@ namespace ZorkBorkTestProject
             var callBack = false;
             using (ShimsContext.Create())
             {
-                ZorkBork.Fakes.ShimKaart.LeesXMLString = (_) =>
+                ZorkBork.Fakes.ShimSettings.LeesXMLOf1String<Kaart>((_) =>
                 {
                     return KaartTest.CreateKaart2x2();
-                };
+                });
                 ZorkBork.Fakes.ShimGameLoop.AllInstances.SaveGame = (_) => { };
                 var gameLoop = new GameLoop(false);
                 gameLoop.VerwerkInput(ConsoleKey.Delete, () => callBack = true);
@@ -48,10 +48,10 @@ namespace ZorkBorkTestProject
             var callBack = false;
             using (ShimsContext.Create())
             {
-                ZorkBork.Fakes.ShimKaart.LeesXMLString = (_) =>
+                ZorkBork.Fakes.ShimSettings.LeesXMLOf1String<Kaart>((_) =>
                 {
                     return KaartTest.CreateKaart2x2();
-                };
+                });
                 ZorkBork.Fakes.ShimGameLoop.AllInstances.InteractMetHuidigeInteractable = (_) => { };
                 var gameLoop = new GameLoop(false);
                 gameLoop.VerwerkInput(ConsoleKey.E, () => callBack = true);
@@ -64,10 +64,10 @@ namespace ZorkBorkTestProject
             var tempFile = @"map.xml";
             using (ShimsContext.Create())
             {
-                ZorkBork.Fakes.ShimKaart.LeesXMLString = (_) =>
+                ZorkBork.Fakes.ShimSettings.LeesXMLOf1String<Kaart>((_) =>
                 {
                     return KaartTest.CreateKaart2x2();
-                };
+                });
                 ZorkBork.Fakes.ShimSettings.GetValueString = (_) =>
                 {
                     return tempFile;
@@ -83,7 +83,7 @@ namespace ZorkBorkTestProject
         {
             using (ShimsContext.Create())
             {
-                ZorkBork.Fakes.ShimKaart.LeesXMLString = (_) =>
+                ZorkBork.Fakes.ShimSettings.LeesXMLOf1String<Kaart> ((_) =>
                 {
                     return new Kaart
                     {
@@ -92,7 +92,7 @@ namespace ZorkBorkTestProject
                          new KaartItem { Beschrijving = "1"}
                         }
                     };
-                };
+                });
                 using (var stringWriter = new StringWriter())
                 {
                     Console.SetOut(stringWriter);
