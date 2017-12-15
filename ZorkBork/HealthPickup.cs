@@ -14,7 +14,7 @@ namespace ZorkBork
         public override void Interact(Speler speler)
         {
             speler.VerhoogOfVerlaagHealth(100);
-            ConsoleWrapper.WriteLine("je hebt een health pickup gescoord!!!");
+            Console.WriteLine("je hebt een health pickup gescoord!!!");
         }
     }
 }

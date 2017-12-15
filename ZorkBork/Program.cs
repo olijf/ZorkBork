@@ -13,7 +13,7 @@ namespace ZorkBork
             FakeLoading();
 
             var restoreSaveGame = false;
-            if (File.Exists(Settings.GetValue("saveGameFile")))
+            if (File.Exists(Settings.GetValue("saveGameFile")) && File.Exists(Settings.GetValue("saveGameSpeler")))
             {
                 Console.WriteLine("Wil je verder gaan met je vorige spel? Toets Enter:");
                 restoreSaveGame = Console.ReadKey().Key == ConsoleKey.Enter;

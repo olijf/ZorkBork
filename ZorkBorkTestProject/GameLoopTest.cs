@@ -26,6 +26,23 @@ namespace ZorkBorkTestProject
             }
         }
         [TestMethod]
+        public void RestoreSaveGameTest()
+        {
+            using (ShimsContext.Create())
+            {
+                ZorkBork.Fakes.ShimSettings.LeesXMLOf1String<Kaart>((_) =>
+                {
+                    return KaartTest.CreateKaart2x2();
+                });
+                ZorkBork.Fakes.ShimSettings.LeesXMLOf1String<Speler>((_) =>
+                {
+                    return new Speler();
+                });
+                var gameLoop = new GameLoop(true);
+                Assert.IsNotNull(gameLoop);
+            }
+        }
+        [TestMethod]
         public void TestDeleteKey()
         {
             var callBack = false;
@@ -83,16 +100,16 @@ namespace ZorkBorkTestProject
         {
             using (ShimsContext.Create())
             {
-                ZorkBork.Fakes.ShimSettings.LeesXMLOf1String<Kaart> ((_) =>
-                {
-                    return new Kaart
-                    {
-                        SpeelVeldGrootte = 1,
-                        KaartItemList = new List<KaartItem> {
+                ZorkBork.Fakes.ShimSettings.LeesXMLOf1String<Kaart>((_) =>
+               {
+                   return new Kaart
+                   {
+                       SpeelVeldGrootte = 1,
+                       KaartItemList = new List<KaartItem> {
                          new KaartItem { Beschrijving = "1"}
-                        }
-                    };
-                });
+                       }
+                   };
+               });
                 using (var stringWriter = new StringWriter())
                 {
                     Console.SetOut(stringWriter);
