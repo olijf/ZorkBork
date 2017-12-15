@@ -7,7 +7,15 @@
   <SpeelVeldGrootte>10</SpeelVeldGrootte>
   <KaartItem>
 
-    <Beschrijving>Je bent zojuist wakker geworden in een huis dat je niet herkent. Je weet niet waarom je hier bent en hebt een kater. Je kunt lopen m.b.v. de pijltjestoetsen.</Beschrijving>
+    <Beschrijving>Je bent zojuist wakker geworden in een huis dat je niet herkent.
+Je weet niet waarom je hier bent en hebt een kater.
+Je kunt lopen m.b.v. de pijltjestoetsen.
+Interacteren met objecten kan met "E".
+Doel is om de uitgang van het huis te vinden.
+Je kunt punten verdienen door score pickups te vinden
+en van vijanden te winnen. Indien je verliest kost dat je punten.
+Veel succes!
+</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
   </KaartItem>
   <KaartItem>
@@ -44,19 +52,19 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 6</Beschrijving>
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 7</Beschrijving>
+    <Beschrijving>Een exit teken wijst naar rechts.</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 8</Beschrijving>
+    <Beschrijving>*Onweergeluid*</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
@@ -106,19 +114,21 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 16</Beschrijving>
+    <Beschrijving>Een exit teken wijst naar het noorden.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 17</Beschrijving>
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-
-    <Beschrijving>Discription 18</Beschrijving>
+    <InterActies>
+      <Vijand />
+    </InterActies>
+    <Beschrijving>Je wordt aangevallen!</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
@@ -179,15 +189,18 @@
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
-
-    <Beschrijving>Discription 27</Beschrijving>
+    <InterActies>
+      <HealthPickup />
+      <ScorePickup />
+    </InterActies>
+    <Beschrijving>Hier ligt/lag score en health!</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 28</Beschrijving>
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
@@ -206,18 +219,20 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 31</Beschrijving>
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-
-    <Beschrijving>Discription 32</Beschrijving>
+    <InterActies>
+      <ScorePickup />
+    </InterActies>
+    <Beschrijving>Hier ligt/lag score!</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 33</Beschrijving>
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
@@ -245,13 +260,15 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 37</Beschrijving>
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-
-    <Beschrijving>Discription 38</Beschrijving>
+    <InterActies>
+      <Vijand />
+    </InterActies>
+    <Beschrijving>Je wordt aangevallen!</Beschrijving>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
@@ -270,14 +287,17 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 41</Beschrijving>
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 42</Beschrijving>
+    <Beschrijving>Je wordt aangevallen!</Beschrijving>
+	<InterActies>
+      <Vijand />
+    </InterActies>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
@@ -341,18 +361,20 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 51</Beschrijving>
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-
-    <Beschrijving>Discription 52</Beschrijving>
+    <InterActies>
+      <HealthPickup />
+    </InterActies>
+    <Beschrijving>Hier ligt/lag health!</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 53</Beschrijving>
+    <Beschrijving>Een exit teken wijst naar het noorden.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
@@ -392,7 +414,7 @@
     <InterActies>
       <Doel />
     </InterActies>
-    <Beschrijving>Discription 59</Beschrijving>
+    <Beschrijving>Je hebt de uitgang gevonden!</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
   </KaartItem>
   <KaartItem>
@@ -415,8 +437,10 @@
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-
-    <Beschrijving>Discription 63</Beschrijving>
+    <InterActies>
+      <Vijand />
+    </InterActies>
+    <Beschrijving>Je wordt aangevallen!</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
@@ -424,26 +448,26 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 64</Beschrijving>
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 65</Beschrijving>
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 66</Beschrijving>
+    <Beschrijving>Exit bord wijst naar rechts.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 67</Beschrijving>
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
@@ -467,7 +491,7 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 70</Beschrijving>
+    <Beschrijving>*Blikseminslag*</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
@@ -500,13 +524,17 @@
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
-
-    <Beschrijving>Discription 75</Beschrijving>
+    <InterActies>
+      <HealthPickup />
+    </InterActies>
+    <Beschrijving>Hier ligt/lag een health pickup!</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
   </KaartItem>
   <KaartItem>
-
-    <Beschrijving>Discription 76</Beschrijving>
+    <InterActies>
+      <Vijand />
+    </InterActies>
+    <Beschrijving>Je worst aangevallen!</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
@@ -540,39 +568,39 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 81</Beschrijving>
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 82</Beschrijving>
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 83</Beschrijving>
+    <Beschrijving>*Muizen lopen over de vloer.*</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 84</Beschrijving>
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 85</Beschrijving>
+    <Beschrijving>Een exit bord wijst naar links. Ecter lijkt het ondersteboven te hangen.</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 86</Beschrijving>
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
@@ -641,7 +669,7 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 97</Beschrijving>
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
