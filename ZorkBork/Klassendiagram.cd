@@ -91,11 +91,11 @@
       <FileName>Extensions\ListExtensions.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ZorkBork.Wrappers.ConsoleWrapper" Collapsed="true">
+  <Class Name="ZorkBork.Wrappers.Console" Collapsed="true">
     <Position X="12" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAACAAAAAAAEAAAA=</HashCode>
-      <FileName>Wrappers\ConsoleWrapper.cs</FileName>
+      <FileName>Wrappers\Console.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ZorkBork.Wrappers.RandomWrapper" Collapsed="true">

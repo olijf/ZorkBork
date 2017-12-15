@@ -62,7 +62,7 @@ namespace ZorkBork
         {
             var r = GetCurrentPosition().IsRichtingAllowed(richting);
             if (!r)
-                ConsoleWrapper.WriteLine("dat kan niet!");
+                Console.WriteLine("dat kan niet!");
             return r && BoundsCheck(bound);
         }
 

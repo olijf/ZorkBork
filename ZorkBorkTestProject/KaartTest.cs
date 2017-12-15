@@ -1,9 +1,7 @@
-﻿using Microsoft.QualityTools.Testing.Fakes;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text.RegularExpressions;
 using System.Xml.Serialization;
 using ZorkBork;

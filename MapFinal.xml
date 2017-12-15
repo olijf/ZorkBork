@@ -44,19 +44,19 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 6</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 7</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 8</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
@@ -106,19 +106,19 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 16</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 17</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 18</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
@@ -180,14 +180,14 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 27</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 28</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
@@ -206,18 +206,18 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 31</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 32</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 33</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
@@ -245,13 +245,13 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 37</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 38</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
@@ -270,14 +270,14 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 41</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 42</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
@@ -341,18 +341,18 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 51</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 52</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 53</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
@@ -392,7 +392,7 @@
     <InterActies>
       <Doel />
     </InterActies>
-    <Beschrijving>Discription 59</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
   </KaartItem>
   <KaartItem>
@@ -416,7 +416,7 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 63</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
@@ -424,26 +424,26 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 64</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 65</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 66</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 67</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
@@ -467,7 +467,7 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 70</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
@@ -501,12 +501,12 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 75</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 76</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
@@ -540,39 +540,39 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 81</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 82</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 83</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 84</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 85</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 86</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
@@ -641,7 +641,7 @@
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Discription 97</Beschrijving>
+    <Beschrijving></Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
