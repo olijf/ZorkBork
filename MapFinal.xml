@@ -91,7 +91,7 @@ Veel succes!
     <InterActies>
       <Vijand />
     </InterActies>
-    <Beschrijving>Je wordt aangevallen door iets!</Beschrijving>
+    <Beschrijving>Je bevindt je in vijandig gebied!</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
@@ -128,7 +128,7 @@ Veel succes!
     <InterActies>
       <Vijand />
     </InterActies>
-    <Beschrijving>Je wordt aangevallen!</Beschrijving>
+    <Beschrijving>Je bevindt je in vijandig gebied!</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
@@ -268,14 +268,14 @@ Veel succes!
     <InterActies>
       <Vijand />
     </InterActies>
-    <Beschrijving>Je wordt aangevallen!</Beschrijving>
+    <Beschrijving>Je bevindt je in vijandig gebied!</Beschrijving>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
     <InterActies>
       <Vijand />
     </InterActies>
-    <Beschrijving>Je wordt aangevallen!</Beschrijving>
+    <Beschrijving>Je bevindt je in vijandig gebied!</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
@@ -294,7 +294,7 @@ Veel succes!
   </KaartItem>
   <KaartItem>
 
-    <Beschrijving>Je wordt aangevallen!</Beschrijving>
+    <Beschrijving>Je bevindt je in vijandig gebied!</Beschrijving>
 	<InterActies>
       <Vijand />
     </InterActies>
@@ -440,7 +440,7 @@ Veel succes!
     <InterActies>
       <Vijand />
     </InterActies>
-    <Beschrijving>Je wordt aangevallen!</Beschrijving>
+    <Beschrijving>Je bevindt je in vijandig gebied!</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
@@ -534,7 +534,7 @@ Veel succes!
     <InterActies>
       <Vijand />
     </InterActies>
-    <Beschrijving>Je worst aangevallen!</Beschrijving>
+    <Beschrijving>Je bevindt je in vijandig gebied!</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
@@ -556,7 +556,7 @@ Veel succes!
     <InterActies>
       <Vijand />
     </InterActies>
-    <Beschrijving>Je wordt weer aangevallen!</Beschrijving>
+    <Beschrijving>Je bevindt je in vijandig gebied!</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
@@ -684,7 +684,7 @@ Veel succes!
     <InterActies>
       <Vijand />
     </InterActies>
-    <Beschrijving>Je wordt weer aangevallen!</Beschrijving>
+    <Beschrijving>Je bevindt je in vijandig gebied!</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>

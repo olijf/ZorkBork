@@ -17,10 +17,12 @@ namespace ZorkBork
             if(randomNumber < 5)
             {
                 speler.VerhoogOfVerlaagScore(200);
+                Console.WriteLine("Gewonnen!\nScore: {0}\nHealth: {1}", speler.Score, speler.Health);
             } else
             {
                 speler.VerhoogOfVerlaagScore(-200);
                 speler.VerhoogOfVerlaagHealth(-25);
+                Console.WriteLine("Verloren:(\nScore: {0}\nHealth: {1}", speler.Score, speler.Health);
             }
         }
     }

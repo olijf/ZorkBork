@@ -13,6 +13,7 @@ namespace ZorkBork
         public override void Interact(Speler speler)
         {
             speler.VerhoogOfVerlaagScore(_score);
+            Console.WriteLine("Nieuwe score: {0}\nHealth: {1}", speler.Score, speler.Health);
         }
 
         public int GetScore()

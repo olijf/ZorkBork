@@ -13,6 +13,7 @@ namespace ZorkBork
         {
             ConsoleWrapper.WriteLine("------------------MISSIE GESLAAGD!------------------");
             ConsoleWrapper.WriteLine("Score: " + speler.Score);
+            ConsoleWrapper.WriteLine("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒");
 
             Console.WriteLine(@"
 
