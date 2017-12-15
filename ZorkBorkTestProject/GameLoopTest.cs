@@ -14,7 +14,6 @@ namespace ZorkBorkTestProject
     [TestClass]
     public class GameLoopTest
     {
-        [TestMethod]
         public void RunGame()
         {
             using (ShimsContext.Create())

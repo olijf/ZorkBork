@@ -20,7 +20,7 @@ namespace ZorkBorkTestProject
 
             scorePickup.Interact(speler);
 
-            Assert.AreEqual(100, speler.Score);
+            Assert.AreEqual(scorePickup.GetScore(), speler.Score);
         }
     }
 }

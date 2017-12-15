@@ -16,11 +16,12 @@ namespace ZorkBorkTestProject
         public void CheckHealthVerhogingNaPickup()
         {
             var speler = new Speler();
+            var spelerOud = speler;
             var healthPickup = new HealthPickup();
 
             healthPickup.Interact(speler);
 
-            Assert.AreEqual(100, speler.Health);
+            Assert.AreEqual(spelerOud.Health, speler.Health);
         }
     }
 }

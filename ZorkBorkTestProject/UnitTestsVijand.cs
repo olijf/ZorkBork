@@ -13,6 +13,7 @@ namespace ZorkBorkTestProject
         public void CheckScoreWhenWon()
         {
             var speler = new Speler();
+            var spelerOud = speler;
             var vijand = new Vijand();
 
             using (ShimsContext.Create())
@@ -25,7 +26,7 @@ namespace ZorkBorkTestProject
 
                 vijand.Interact(speler);
 
-                Assert.AreEqual(200, speler.Score);
+                Assert.AreEqual(spelerOud.Score, speler.Score);
 
             }
         }
@@ -34,6 +35,7 @@ namespace ZorkBorkTestProject
         public void CheckHealthAndScoreWhenLost()
         {
             var speler = new Speler();
+            var spelerOud = speler;
             var vijand = new Vijand();
 
             using (ShimsContext.Create())
@@ -46,8 +48,8 @@ namespace ZorkBorkTestProject
 
                 vijand.Interact(speler);
 
-                Assert.AreEqual(0, speler.Score);
-                Assert.AreEqual(75, speler.Health);
+                Assert.AreEqual(spelerOud.Score, speler.Score);
+                Assert.AreEqual(spelerOud.Health, speler.Health);
 
             }
         }

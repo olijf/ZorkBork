@@ -40,11 +40,34 @@ namespace ZorkBork
             {
                 InteractMetHuidigeInteractable();
             }
+            else if (interactieKey == ConsoleKey.Escape)
+            {
+                Afsluitmenu();
+            }
             else
             {
                 _kaart.UpdatePositie((Richting)interactieKey);
             }
             callBack();
+        }
+
+        private void Afsluitmenu()
+        {
+            Console.WriteLine("Weet je zeker dat je wilt afsluiten? (Y/N)");
+            String input = Console.ReadLine();
+            if (input == "Y")
+            {
+                Environment.Exit(0);
+            }
+            else if (input == "N")
+            {
+                Console.WriteLine("Afsluiten geannuleerd.");
+            }
+            else
+            {
+                Console.WriteLine("Kies \"Y\" of \"N\".");
+                Afsluitmenu();
+            }
         }
 
         private void SaveGame()

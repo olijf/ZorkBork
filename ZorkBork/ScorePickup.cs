@@ -8,11 +8,16 @@ namespace ZorkBork
 {
     public class ScorePickup : Interactable
     {
+        private int _score = 100;
 
         public override void Interact(Speler speler)
         {
-            speler.VerhoogOfVerlaagScore(100);
+            speler.VerhoogOfVerlaagScore(_score);
         }
 
+        public int GetScore()
+        {
+            return _score;
+        }
     }
 }

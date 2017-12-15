@@ -13,17 +13,25 @@ namespace ZorkBork
         {
             ConsoleWrapper.WriteLine("------------------MISSIE GESLAAGD!------------------");
             ConsoleWrapper.WriteLine("Score: " + speler.Score);
-            ConsoleWrapper.WriteLine(string.Empty);
-            ConsoleWrapper.WriteLine(string.Empty);
-            ConsoleWrapper.WriteLine("Druk op Esc om af te sluiten.");
-            while(true)
-            {
-                var info = ConsoleWrapper.ReadKey();
-                if (info == ConsoleKey.Escape)
-                {
-                    Environment.Exit(0);
-                }
-            }
+
+            Console.WriteLine(@"
+
+
+         .* *.               `o`o`
+         *. .*              o`o`o`o      ^,^,^
+           * \               `o`o`     ^,^,^,^,^
+              \     ***        |       ^,^,^,^,^
+               \   *****       |        /^,^,^
+                \   ***        |       /
+    ~@~*~@~      \   \         |      /
+  ~*~@~*~@~*~     \   \        |     /
+  ~*~@smd@~*~      \   \       |    /     #$#$#        .`'.;.
+  ~*~@~*~@~*~       \   \      |   /     #$#$#$#   00  .`,.',
+    ~@~*~@~ \        \   \     |  /      /#$#$#   /|||  `.,'
+_____________\________\___\____|_/______/_________|\/\___||______
+
+
+");
         }
     }
 }
