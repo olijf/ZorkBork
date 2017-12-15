@@ -44,14 +44,14 @@ namespace ZorkBork
         }
         public override string ToString()
         {
-            string returnString = String.Format("Je staat in {0} je kan de volgende richting uit: ", Beschrijving);
+            string returnString = String.Format("{0}{1}Je kan de volgende richting uit: ", Beschrijving, Environment.NewLine);
             foreach (var item in InteractieRichting)
             {
                 returnString += String.Format("{0} ", item);
             }
             if (interacties.Count > 0)
             {
-                returnString += String.Format("{0}daarnaast kan je ", Environment.NewLine);
+                returnString += String.Format("{0}Je kunt interacteren ", Environment.NewLine);
                 foreach (var item in interacties)
                 {
                     returnString += String.Format("{0} ", item);

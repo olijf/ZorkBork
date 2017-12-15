@@ -6,205 +6,118 @@
   </Positie>
   <SpeelVeldGrootte>10</SpeelVeldGrootte>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>sleuteldestleut</Beschrijving>
+
+    <Beschrijving>Je bent zojuist wakker geworden in een huis dat je niet herkent. Je weet niet waarom je hier bent en hebt een kater. Je kunt lopen m.b.v. de pijltjestoetsen.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 1</Beschrijving>
+
+    <Beschrijving>Je ziet geen hand voor ogen en hoort vreemde geluiden. Wellicht is het beter om terug te gaan.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 2</Beschrijving>
+
+    <Beschrijving>Dit lijkt nergens naar toe te leiden.</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 3</Beschrijving>
+
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
     <InterActies>
       <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
     </InterActies>
-    <Beschrijving>Discription 4</Beschrijving>
+    <Beschrijving>Hier is/was een healthpickup!</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
   </KaartItem>
   <KaartItem>
     <InterActies>
-      <HealthPickup />
       <ScorePickup />
-      <Vijand />
-      <Doel />
     </InterActies>
-    <Beschrijving>Discription 5</Beschrijving>
+    <Beschrijving>Hier is/was een scorepickup!</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 6</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 7</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 8</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
     <InterActies>
-      <HealthPickup />
       <ScorePickup />
-      <Vijand />
-      <Doel />
     </InterActies>
-    <Beschrijving>Discription 9</Beschrijving>
+    <Beschrijving>Hier is/was score pickup!</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 10</Beschrijving>
+
+    <Beschrijving>Er is geen lichtschakelaar te vinden.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 11</Beschrijving>
+
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
     <InterActies>
-      <HealthPickup />
-      <ScorePickup />
       <Vijand />
-      <Doel />
     </InterActies>
-    <Beschrijving>Discription 12</Beschrijving>
+    <Beschrijving>Je wordt aangevallen door iets!</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 13</Beschrijving>
+
+    <Beschrijving>Deze gang is nog donkerder.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 14</Beschrijving>
+
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 15</Beschrijving>
+
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 16</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 17</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 18</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
@@ -213,170 +126,97 @@
   <KaartItem>
     <InterActies>
       <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
     </InterActies>
-    <Beschrijving>Discription 19</Beschrijving>
+    <Beschrijving>Hier is/was health pickup!</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 20</Beschrijving>
+
+    <Beschrijving>Je ziet een lange gang.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 21</Beschrijving>
+
+    <Beschrijving>Een deur slaat dicht ergens in het huis...</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 22</Beschrijving>
+
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 23</Beschrijving>
+
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 24</Beschrijving>
+
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 25</Beschrijving>
+
+    <Beschrijving>Er is hier een kamer.</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 26</Beschrijving>
+
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 27</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 28</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 29</Beschrijving>
+
+    <Beschrijving>Ga terug. Het is te donker om iets te kunnen zien.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 30</Beschrijving>
+
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 31</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 32</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 33</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
@@ -384,340 +224,198 @@
   <KaartItem>
     <InterActies>
       <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
     </InterActies>
-    <Beschrijving>Discription 34</Beschrijving>
+    <Beschrijving>Hier is/was health!</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 35</Beschrijving>
+
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 36</Beschrijving>
+
+    <Beschrijving>Een grote kamer.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 37</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 38</Beschrijving>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
     <InterActies>
-      <HealthPickup />
-      <ScorePickup />
       <Vijand />
-      <Doel />
     </InterActies>
-    <Beschrijving>Discription 39</Beschrijving>
+    <Beschrijving>Je wordt aangevallen!</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 40</Beschrijving>
+
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 41</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 42</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 43</Beschrijving>
+
+    <Beschrijving>Een exit teken wijst in noordelijke richting.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
     <InterActies>
-      <HealthPickup />
       <ScorePickup />
-      <Vijand />
-      <Doel />
     </InterActies>
-    <Beschrijving>Discription 44</Beschrijving>
+    <Beschrijving>Hier is/was score!</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 45</Beschrijving>
+
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 46</Beschrijving>
+
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 47</Beschrijving>
+
+    <Beschrijving>Een grote kamer.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 48</Beschrijving>
+
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 49</Beschrijving>
+
+    <Beschrijving>Er is waarschijnlijk niks bijzonders hier.</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 50</Beschrijving>
+
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 51</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 52</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 53</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 54</Beschrijving>
+
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 55</Beschrijving>
+
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 56</Beschrijving>
+
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 57</Beschrijving>
+
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 58</Beschrijving>
+
+    <Beschrijving>Er staan hier vreemde tekens op de muur.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
     <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
       <Doel />
     </InterActies>
     <Beschrijving>Discription 59</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 60</Beschrijving>
+
+    <Beschrijving>Nog een lange gang.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 61</Beschrijving>
+
+    <Beschrijving>Een exit teken wijst naar rechts.</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 62</Beschrijving>
+
+    <Beschrijving>*Krakende vloer*</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 63</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
@@ -725,58 +423,33 @@
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 64</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 65</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 66</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 67</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 68</Beschrijving>
+
+    <Beschrijving>Er hangt hier een exit teken in noordelijke richting!</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
@@ -788,17 +461,12 @@
       <Vijand />
       <Doel />
     </InterActies>
-    <Beschrijving>Discription 69</Beschrijving>
+    <Beschrijving>Laatste vijand valt je aan!</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 70</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
@@ -807,62 +475,37 @@
     <InterActies>
       <HealthPickup />
       <ScorePickup />
-      <Vijand />
-      <Doel />
     </InterActies>
-    <Beschrijving>Discription 71</Beschrijving>
+    <Beschrijving>Er ligt hier score en health!</Beschrijving>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 72</Beschrijving>
+
+    <Beschrijving>Hier is echt niks te zien.</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 73</Beschrijving>
+
+    <Beschrijving>Hier is niks te zien.</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
     <InterActies>
-      <HealthPickup />
-      <ScorePickup />
       <Vijand />
-      <Doel />
     </InterActies>
-    <Beschrijving>Discription 74</Beschrijving>
+    <Beschrijving>Iets valt je aan!</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 75</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 76</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
@@ -871,186 +514,114 @@
     <InterActies>
       <HealthPickup />
       <ScorePickup />
-      <Vijand />
-      <Doel />
     </InterActies>
-    <Beschrijving>Discription 77</Beschrijving>
+    <Beschrijving>Hier is/was score en health!</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 78</Beschrijving>
+
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
     <InterActies>
-      <HealthPickup />
-      <ScorePickup />
       <Vijand />
-      <Doel />
     </InterActies>
-    <Beschrijving>Discription 79</Beschrijving>
+    <Beschrijving>Je wordt weer aangevallen!</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 80</Beschrijving>
+
+    <Beschrijving>Een exit teken wijst naar rechts.</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 81</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 82</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 83</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 84</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 85</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 86</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 88</Beschrijving>
+
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
     <InterActies>
       <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
     </InterActies>
-    <Beschrijving>Discription 89</Beschrijving>
+    <Beschrijving>De weg naar de uitgang zit vol met "dingen" die je aan willen vallen. Er is waarschijnlijk geen andere manier om te ontsnappen uit het huis. Er ligt/lag hier ook een health pickup.</Beschrijving>
     <InteractieRichting>Omhoog</InteractieRichting>
     <InteractieRichting>Omlaag</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 90</Beschrijving>
+
+    <Beschrijving>Nee, hier is niets.</Beschrijving>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 91</Beschrijving>
+
+    <Beschrijving>Deze gang is leeg.</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 92</Beschrijving>
+
+    <Beschrijving>Niets bijzonders te zien hier.</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 93</Beschrijving>
+
+    <Beschrijving>Deze gang is leeg.</Beschrijving>
+    <InteractieRichting>Links</InteractieRichting>
+    <InteractieRichting>Rechts</InteractieRichting>
+  </KaartItem>
+  <KaartItem>
+
+    <Beschrijving>Dit likt nergen naar toe te leiden.</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
@@ -1058,65 +629,34 @@
     <InterActies>
       <HealthPickup />
       <ScorePickup />
-      <Vijand />
-      <Doel />
     </InterActies>
-    <Beschrijving>Discription 94</Beschrijving>
-    <InteractieRichting>Links</InteractieRichting>
-    <InteractieRichting>Rechts</InteractieRichting>
-  </KaartItem>
-  <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 95</Beschrijving>
+    <Beschrijving>Er ligt hier score en health!</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 96</Beschrijving>
+
+    <Beschrijving>Een exit teken wijst naar rechts.</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
+
     <Beschrijving>Discription 97</Beschrijving>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
-    <InterActies>
-      <HealthPickup />
-      <ScorePickup />
-      <Vijand />
-      <Doel />
-    </InterActies>
-    <Beschrijving>Discription 98</Beschrijving>
+
+    <Beschrijving>Een exit teken wijst naar rechts.</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
     <InteractieRichting>Rechts</InteractieRichting>
   </KaartItem>
   <KaartItem>
     <InterActies>
-      <HealthPickup />
-      <ScorePickup />
       <Vijand />
-      <Doel />
     </InterActies>
-    <Beschrijving>Discription 99</Beschrijving>
+    <Beschrijving>Je wordt weer aangevallen!</Beschrijving>
     <InteractieRichting>Omlaag</InteractieRichting>
     <InteractieRichting>Links</InteractieRichting>
   </KaartItem>

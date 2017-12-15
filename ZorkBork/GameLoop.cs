@@ -1,7 +1,10 @@
-﻿using System;
+﻿using Colorful;
+using System;
+using System.Drawing;
 using System.IO;
 using System.Xml.Serialization;
 using ZorkBork.Wrappers;
+using Console = Colorful.Console;
 
 namespace ZorkBork
 {
@@ -23,7 +26,10 @@ namespace ZorkBork
 
         public void VolgendeStap()
         {
-            ConsoleWrapper.WriteLine(_kaart.GetCurrentPosition());
+            StyleSheet styleSheet = new StyleSheet(Color.White);
+            styleSheet.AddStyle("Je kan de volgende richting uit:", Color.MediumSlateBlue);
+            styleSheet.AddStyle("Je kunt interacteren", Color.Red);
+            Console.WriteLineStyled(_kaart.GetCurrentPosition().ToString(), styleSheet);
             var interactieKey = ConsoleWrapper.ReadKey();
             VerwerkInput(interactieKey, VolgendeStap);
         }
