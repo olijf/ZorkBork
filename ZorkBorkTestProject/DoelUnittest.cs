@@ -2,6 +2,7 @@
 using System;
 using System.IO;
 using System.Linq;
+using ZorkBork;
 
 namespace ZorkBorkTestProject
 {
@@ -9,15 +10,16 @@ namespace ZorkBorkTestProject
     public class DoelUnittest
     {
         [TestMethod]
-        public void MyTestMethod()
+        public void DoelTest()
         {
 
             using (var stringWriter = new StringWriter())
             {
                 Console.SetOut(stringWriter);
-                //var gameLoop = new GameLoop(false);
-                //gameLoop.InteractMetHuidigeInteractable();
-                Assert.IsTrue(stringWriter.ToString().Contains("E is hier geen geldige keuze"));
+                var doel = new Doel();
+                var speler = new Speler();
+                doel.Interact(speler);
+                Assert.IsTrue(stringWriter.ToString().Contains("GESLAAGD"));
             }
         }
     }
