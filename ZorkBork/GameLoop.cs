@@ -3,7 +3,6 @@ using System;
 using System.Drawing;
 using System.IO;
 using System.Xml.Serialization;
-using ZorkBork.Wrappers;
 using Console = Colorful.Console;
 
 namespace ZorkBork
@@ -61,12 +60,12 @@ namespace ZorkBork
         private void Afsluitmenu()
         {
             Console.WriteLine("Weet je zeker dat je wilt afsluiten? (Y/N)");
-            String input = Console.ReadLine();
-            if (input == "Y")
+            var input = Console.ReadKey().Key;
+            if (input == ConsoleKey.Y)
             {
                 Environment.Exit(0);
             }
-            else if (input == "N")
+            else if (input == ConsoleKey.N)
             {
                 Console.WriteLine("Afsluiten geannuleerd.");
             }
@@ -77,7 +76,7 @@ namespace ZorkBork
             }
         }
 
-        private void SaveGame()
+        public void SaveGame()
         {
             var serializer = new XmlSerializer(typeof(Kaart));
             using (var streamWriter = new StreamWriter(Settings.GetValue("saveGameFile")))
@@ -95,7 +94,7 @@ namespace ZorkBork
             }
             else
             {
-                ConsoleWrapper.WriteLine("E is hier geen geldige keuze");
+                Console.WriteLine("E is hier geen geldige keuze");
             }
         }
     }

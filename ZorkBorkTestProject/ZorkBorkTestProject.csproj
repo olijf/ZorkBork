@@ -29,6 +29,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>..\..\..\..\Downloads\C2sc.Rules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -58,7 +59,9 @@
   <ItemGroup>
     <Compile Include="Comparers\KaartComparer.cs" />
     <Compile Include="Comparers\KaartItemComparer.cs" />
+    <Compile Include="DoelUnittest.cs" />
     <Compile Include="GameLoopTest.cs" />
+    <Compile Include="RandomWrapperTest.cs" />
     <Compile Include="UnitTestsHealth.cs" />
     <Compile Include="UnitTestsScore.cs" />
     <Compile Include="UnitTestsVijand.cs" />
