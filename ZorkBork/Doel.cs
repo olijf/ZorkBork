@@ -11,8 +11,9 @@ namespace ZorkBork
     {
         public override void Interact(Speler speler)
         {
-            Console.WriteLine("------------------MISSIE GESLAAGD!------------------");
-            Console.WriteLine("Score: " + speler.Score);
+            ConsoleWrapper.WriteLine("------------------MISSIE GESLAAGD!------------------");
+            ConsoleWrapper.WriteLine("Score: " + speler.Score);
+            ConsoleWrapper.WriteLine("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒");
 
             Console.WriteLine(@"
 
