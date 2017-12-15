@@ -19,7 +19,7 @@ namespace ZorkBork
             if (restoreSaveGame)
             {
 
-                _speler = Settings.LeesXML<Speler>(Settings.GetValue("spelerSaveGame"));
+                _speler = Settings.LeesXML<Speler>(Settings.GetValue("saveGameSpeler"));
                 _kaart = Settings.LeesXML<Kaart>(Settings.GetValue("saveGameFile"));
             }
             else
@@ -84,16 +84,8 @@ namespace ZorkBork
 
         public void SaveGame()
         {
-            var serializer = new XmlSerializer(typeof(Kaart));
-            using (var streamWriter = new StreamWriter(Settings.GetValue("saveGameFile")))
-            {
-                serializer.Serialize(streamWriter, _kaart);
-            }
-            var spelerSerializer = new XmlSerializer(typeof(Speler));
-            using (var streamWriter = new StreamWriter(Settings.GetValue("saveGameSpeler")))
-            {
-                spelerSerializer.Serialize(streamWriter, _speler);
-            }
+            Settings.SchrijfXML<Kaart>(Settings.GetValue("saveGameFile"), _kaart);
+            Settings.SchrijfXML<Speler>(Settings.GetValue("saveGameSpeler"), _speler);
         }
 
         public void InteractMetHuidigeInteractable()

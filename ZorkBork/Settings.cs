@@ -21,5 +21,14 @@ namespace ZorkBork
             };
             return result;
         }
+        public static void SchrijfXML<T>(string fileName, T outPut)
+        {
+            var serializer = new XmlSerializer(typeof(T));
+            using (var streamWriter = new StreamWriter(fileName))
+            {
+                serializer.Serialize(streamWriter, outPut);
+            }
+        }
     }
+
 }

@@ -16,13 +16,30 @@ namespace ZorkBorkTestProject
             var callBack = false;
             using (ShimsContext.Create())
             {
-                ZorkBork.Fakes.ShimKaart.LeesXMLString = (_) =>
+                ZorkBork.Fakes.ShimSettings.LeesXMLOf1String<Kaart>((_) =>
                 {
                     return KaartTest.CreateKaart2x2();
-                };
+                });
                 var gameLoop = new GameLoop(false);
                 gameLoop.VerwerkInput(ConsoleKey.UpArrow, () => callBack = true);
                 Assert.IsTrue(callBack);
+            }
+        }
+        [TestMethod]
+        public void RestoreSaveGameTest()
+        {
+            using (ShimsContext.Create())
+            {
+                ZorkBork.Fakes.ShimSettings.LeesXMLOf1String<Kaart>((_) =>
+                {
+                    return KaartTest.CreateKaart2x2();
+                });
+                ZorkBork.Fakes.ShimSettings.LeesXMLOf1String<Speler>((_) =>
+                {
+                    return new Speler();
+                });
+                var gameLoop = new GameLoop(true);
+                Assert.IsNotNull(gameLoop);
             }
         }
         [TestMethod]
@@ -31,10 +48,10 @@ namespace ZorkBorkTestProject
             var callBack = false;
             using (ShimsContext.Create())
             {
-                ZorkBork.Fakes.ShimKaart.LeesXMLString = (_) =>
+                ZorkBork.Fakes.ShimSettings.LeesXMLOf1String<Kaart>((_) =>
                 {
                     return KaartTest.CreateKaart2x2();
-                };
+                });
                 ZorkBork.Fakes.ShimGameLoop.AllInstances.SaveGame = (_) => { };
                 var gameLoop = new GameLoop(false);
                 gameLoop.VerwerkInput(ConsoleKey.Delete, () => callBack = true);
@@ -48,10 +65,10 @@ namespace ZorkBorkTestProject
             var callBack = false;
             using (ShimsContext.Create())
             {
-                ZorkBork.Fakes.ShimKaart.LeesXMLString = (_) =>
+                ZorkBork.Fakes.ShimSettings.LeesXMLOf1String<Kaart>((_) =>
                 {
                     return KaartTest.CreateKaart2x2();
-                };
+                });
                 ZorkBork.Fakes.ShimGameLoop.AllInstances.InteractMetHuidigeInteractable = (_) => { };
                 var gameLoop = new GameLoop(false);
                 gameLoop.VerwerkInput(ConsoleKey.E, () => callBack = true);
@@ -64,10 +81,10 @@ namespace ZorkBorkTestProject
             var tempFile = @"map.xml";
             using (ShimsContext.Create())
             {
-                ZorkBork.Fakes.ShimKaart.LeesXMLString = (_) =>
+                ZorkBork.Fakes.ShimSettings.LeesXMLOf1String<Kaart>((_) =>
                 {
                     return KaartTest.CreateKaart2x2();
-                };
+                });
                 ZorkBork.Fakes.ShimSettings.GetValueString = (_) =>
                 {
                     return tempFile;
@@ -83,16 +100,16 @@ namespace ZorkBorkTestProject
         {
             using (ShimsContext.Create())
             {
-                ZorkBork.Fakes.ShimKaart.LeesXMLString = (_) =>
-                {
-                    return new Kaart
-                    {
-                        SpeelVeldGrootte = 1,
-                        KaartItemList = new List<KaartItem> {
+                ZorkBork.Fakes.ShimSettings.LeesXMLOf1String<Kaart>((_) =>
+               {
+                   return new Kaart
+                   {
+                       SpeelVeldGrootte = 1,
+                       KaartItemList = new List<KaartItem> {
                          new KaartItem { Beschrijving = "1"}
-                        }
-                    };
-                };
+                       }
+                   };
+               });
                 using (var stringWriter = new StringWriter())
                 {
                     Console.SetOut(stringWriter);
